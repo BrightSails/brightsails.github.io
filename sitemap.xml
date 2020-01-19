@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/2020/01/myfirstblog/</loc>
+    <loc>https://github.com/BrightSails/BrightSails.github.io/2020/01/myfirstblog/</loc>
     <lastmod>2020-01-19T23:06:02+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/posts/</loc>
+    <loc>https://github.com/BrightSails/BrightSails.github.io/posts/</loc>
     <lastmod>2020-01-19T23:06:02+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://github.com/BrightSails/BrightSails.github.io/</loc>
     <lastmod>2020-01-19T23:06:02+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/2020/01/any/</loc>
+    <loc>https://github.com/BrightSails/BrightSails.github.io/2020/01/any/</loc>
     <lastmod>2020-01-19T23:00:12+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://github.com/BrightSails/BrightSails.github.io/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/series/</loc>
+    <loc>https://github.com/BrightSails/BrightSails.github.io/series/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://github.com/BrightSails/BrightSails.github.io/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
