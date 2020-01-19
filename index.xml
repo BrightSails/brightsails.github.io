@@ -5,10 +5,19 @@
     <link>https://brightsails.github.io/</link>
     <description>Recent content on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Jan 2020 23:06:02 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jan 2020 00:36:12 +0800</lastBuildDate>
     
         <atom:link href="https://brightsails.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blog</title>
+      <link>https://brightsails.github.io/2020/01/blog/</link>
+      <pubDate>Mon, 20 Jan 2020 00:36:12 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/01/blog/</guid>
+      <description>ssss</description>
+    </item>
     
     <item>
       <title>MyFirstBlog</title>
