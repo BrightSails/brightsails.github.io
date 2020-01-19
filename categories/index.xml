@@ -2,19 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Pure theme for Hugo</title>
-    <link>https://brightsails.github.io/categories/</link>
+    <link>https://example.com/categories/</link>
     <description>Recent content in Categories on Pure theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     
-        <atom:link href="https://brightsails.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>MyFirstBlog</title>
+      <link>https://example.com/2020/01/myfirstblog/</link>
+      <pubDate>Sun, 19 Jan 2020 23:06:02 +0800</pubDate>
+      
+      <guid>https://example.com/2020/01/myfirstblog/</guid>
+      <description>hugo new site myblog hugo new post/blog.md hugo server -t pure hugo &amp;ndash;theme=pure &amp;ndash;baseUrl=&amp;quot;https://brightsails.github.io&amp;rdquo; -buildDrafts cd public/ git init git add . git commit -m &amp;ldquo;第er次commit&amp;rdquo; git config &amp;ndash;global user.name&amp;quot;brightsails&amp;rdquo; git config &amp;ndash;global user.email&amp;quot;2630594775@qq.com&amp;rdquo; git remote add origin https://github.com/BrightSails/brightsails.github.io.git git push https://github.com/BrightSails/brightsails.github.io.git master git push -u origin</description>
+    </item>
+    
+    <item>
       <title>Any</title>
-      <link>https://brightsails.github.io/2020/01/any/</link>
+      <link>https://example.com/2020/01/any/</link>
       <pubDate>Sun, 19 Jan 2020 23:00:12 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/01/any/</guid>
+      <guid>https://example.com/2020/01/any/</guid>
       <description>ce
 dd f
 ee
