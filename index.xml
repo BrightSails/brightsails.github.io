@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pure theme for Hugo</title>
+    <title>BrightSails Blog</title>
     <link>https://brightsails.github.io/</link>
-    <description>Recent content on Pure theme for Hugo</description>
+    <description>Recent content on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 19 Jan 2020 23:06:02 +0800</lastBuildDate>
     
