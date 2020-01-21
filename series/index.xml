@@ -24,7 +24,10 @@
       <pubDate>Sun, 19 Jan 2020 23:06:02 +0800</pubDate>
       
       <guid>https://brightsails.github.io/2020/01/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</guid>
-      <description>本地环境操作： 1.windows下载hugo环境 https://gohugo.io/getting-started/installing/ 2.下载git https://www.git-scm.com/download/ 3.下载node https://nodejs.org/zh-cn/download/ 4.安装完成后，初始化博客 hugo new site myblog 5.新建文章 hugo new post/blog.md 6.</description>
+      <description>&lt;h2 id=&#34;本地环境操作&#34;&gt;本地环境操作：&lt;/h2&gt;
+&lt;h4 id=&#34;1windows下载hugo环境&#34;&gt;1.windows下载hugo环境&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;https://gohugo.io/getting-started/installing/
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
