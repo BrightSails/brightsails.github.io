@@ -19,12 +19,12 @@
     </item>
     
     <item>
-      <title>MyFirstBlog</title>
-      <link>https://brightsails.github.io/2020/01/myfirstblog/</link>
+      <title>hugo博客的搭建</title>
+      <link>https://brightsails.github.io/2020/01/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Sun, 19 Jan 2020 23:06:02 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/01/myfirstblog/</guid>
-      <description>hugo new site myblog hugo new post/blog.md hugo server -t pure hugo &amp;ndash;theme=pure &amp;ndash;baseUrl=&amp;quot;https://brightsails.github.io&amp;rdquo; -buildDrafts cd public/ git init git add . git commit -m &amp;ldquo;第er次commit&amp;rdquo; git config &amp;ndash;global user.name&amp;quot;brightsails&amp;rdquo; git config &amp;ndash;global user.email&amp;quot;2630594775@qq.com&amp;rdquo; git remote add origin https://github.com/BrightSails/brightsails.github.io.git git push https://github.com/BrightSails/brightsails.github.io.git master git push -u origin</description>
+      <guid>https://brightsails.github.io/2020/01/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</guid>
+      <description>本地环境操作： 1.windows下载hugo环境 https://gohugo.io/getting-started/installing/ 2.下载git https://www.git-scm.com/download/ 3.下载node https://nodejs.org/zh-cn/download/ 4.安装完成后，初始化博客 hugo new site myblog 5.新建文章 hugo new post/blog.md 6.</description>
     </item>
     
     <item>
