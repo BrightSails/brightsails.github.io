@@ -5,18 +5,18 @@
     <link>https://brightsails.github.io/posts/</link>
     <description>Recent content in Posts on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Jan 2020 00:36:12 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2020 14:13:45 +0800</lastBuildDate>
     
         <atom:link href="https://brightsails.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blog</title>
-      <link>https://brightsails.github.io/2020/01/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</link>
-      <pubDate>Mon, 20 Jan 2020 00:36:12 +0800</pubDate>
+      <title>Bigdata环境搭建</title>
+      <link>https://brightsails.github.io/2020/01/bigdata_1/</link>
+      <pubDate>Fri, 31 Jan 2020 14:13:45 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/01/hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</guid>
-      <description>ssss</description>
+      <guid>https://brightsails.github.io/2020/01/bigdata_1/</guid>
+      <description>大数据的特征 容量（Volume）：数据的大小决定所考虑的数据的价值和潜在的信息； 种类（Variety）：数据类型的多样性； 速度（Veloci</description>
     </item>
     
     <item>
@@ -29,20 +29,6 @@
 &lt;h4 id=&#34;1windows下载hugo环境&#34;&gt;1.windows下载hugo环境&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;https://gohugo.io/getting-started/installing/
 &lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>Any</title>
-      <link>https://brightsails.github.io/2020/01/any/</link>
-      <pubDate>Sun, 19 Jan 2020 23:00:12 +0800</pubDate>
-      
-      <guid>https://brightsails.github.io/2020/01/any/</guid>
-      <description>ce
-dd f
-ee
-f
-e
-f</description>
     </item>
     
   </channel>
