@@ -42,7 +42,7 @@
 <meta itemprop="description" content="linux文件权限管理 共10位 r 读 w 写 x 执行 第1位为：d目录 -文件 l软连接代码 第2-5位为：文件所属者权限 第5-8位为：所属组 第8-10位为">
 <meta itemprop="datePublished" content="2020-02-04T00:07:52&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-04T00:07:52&#43;08:00" />
-<meta itemprop="wordCount" content="776">
+<meta itemprop="wordCount" content="773">
 
 
 
@@ -271,27 +271,32 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/linuxbasicconfig/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 776字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 773字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       <h4 id="linux文件权限管理">linux文件权限管理</h4>
-<p>共10位 r 读 w 写 x 执行
-第1位为：d目录 -文件 l软连接<code>代码</code>
-第2-5位为：文件所属者权限
-第5-8位为：所属组
-第8-10位为：其他用户</p>
-<p>####Linux基础命令
-ls -l ==ll 查看该目录下文件的详细信息
-ls -a 查看该目录下所有文件（隐藏文件）
-la -ls = ll+la
-ls -lhi 显示存储号
-touch 创建文件
-mv a b 将a改名为b
-chmod ：
-文件所有者 u 同组 g 其他用户 o</p>
-<pre><code>chmod ug+r 文件名
+<ul>
+<li>共10位 r 读 w 写 x 执行</li>
+<li>第1位为：d目录 -文件 l软连接<code>代码</code></li>
+<li>第2-5位为：文件所属者权限</li>
+<li>第5-8位为：所属组</li>
+<li>第8-10位为：其他用户</li>
+</ul>
+<h4 id="linux查看命令">Linux查看命令</h4>
+<ul>
+<li>ls -l ==ll 查看该目录下文件的详细信息</li>
+<li>ls -a 查看该目录下所有文件（隐藏文件）</li>
+<li>la -ls = ll+la</li>
+<li>ls -lhi 显示存储号</li>
+<li>touch 创建文件</li>
+<li>mv a b 将a改名为b</li>
+<li>chmod ：</li>
+<li>文件所有者 u 同组 g 其他用户 o</li>
+</ul>
+<pre><code>ch
+mod ug+r 文件名
 chmod 777 +文件名 三位的二进制
 文件所有者与同组成员增加读的权限
 </code></pre>
