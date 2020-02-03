@@ -16,7 +16,7 @@
       <pubDate>Tue, 04 Feb 2020 00:07:52 +0800</pubDate>
       
       <guid>https://brightsails.github.io/2020/02/linuxbasicconfig/</guid>
-      <description></description>
+      <description>linux文件权限管理 共10位 r 读 w 写 x 执行 第1位为：d目录 -文件 l软连接代码 第2-5位为：文件所属者权限 第5-8位为：所属组 第8-10位为</description>
     </item>
     
     <item>

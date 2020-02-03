@@ -23,7 +23,7 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="" />
+  <meta name="description" content="linux文件权限管理 共10位 r 读 w 写 x 执行 第1位为：d目录 -文件 l软连接代码 第2-5位为：文件所属者权限 第5-8位为：所属组 第8-10位为" />
   <meta name="generator" content="Hugo 0.62.2 with theme pure" />
   <title>Linux命令 - BrightSails Blog</title>
   
@@ -33,22 +33,22 @@
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
   <meta property="og:title" content="Linux命令" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="linux文件权限管理 共10位 r 读 w 写 x 执行 第1位为：d目录 -文件 l软连接代码 第2-5位为：文件所属者权限 第5-8位为：所属组 第8-10位为" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://brightsails.github.io/2020/02/linuxbasicconfig/" />
 <meta property="article:published_time" content="2020-02-04T00:07:52+08:00" />
 <meta property="article:modified_time" content="2020-02-04T00:07:52+08:00" />
 <meta itemprop="name" content="Linux命令">
-<meta itemprop="description" content="">
+<meta itemprop="description" content="linux文件权限管理 共10位 r 读 w 写 x 执行 第1位为：d目录 -文件 l软连接代码 第2-5位为：文件所属者权限 第5-8位为：所属组 第8-10位为">
 <meta itemprop="datePublished" content="2020-02-04T00:07:52&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-04T00:07:52&#43;08:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="776">
 
 
 
 <meta itemprop="keywords" content="linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux命令"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="linux文件权限管理 共10位 r 读 w 写 x 执行 第1位为：d目录 -文件 l软连接代码 第2-5位为：文件所属者权限 第5-8位为：所属组 第8-10位为"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -271,12 +271,119 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/linuxbasicconfig/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 0字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 0分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 776字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      
+      <h4 id="linux文件权限管理">linux文件权限管理</h4>
+<p>共10位 r 读 w 写 x 执行
+第1位为：d目录 -文件 l软连接<code>代码</code>
+第2-5位为：文件所属者权限
+第5-8位为：所属组
+第8-10位为：其他用户</p>
+<p>####Linux基础命令
+ls -l ==ll 查看该目录下文件的详细信息
+ls -a 查看该目录下所有文件（隐藏文件）
+la -ls = ll+la
+ls -lhi 显示存储号
+touch 创建文件
+mv a b 将a改名为b
+chmod ：
+文件所有者 u 同组 g 其他用户 o</p>
+<pre><code>chmod ug+r 文件名
+chmod 777 +文件名 三位的二进制
+文件所有者与同组成员增加读的权限
+</code></pre>
+<h4 id="vi基础操作">vi基础操作</h4>
+<ul>
+<li>yy 复制一行</li>
+<li>yNy 复制N行</li>
+<li>p 粘贴</li>
+<li>u 撤销</li>
+<li>dd 删除一行</li>
+<li>dNd 删除N行</li>
+<li>shift+6 光标移至行头</li>
+<li>shift+7 光标移至行尾</li>
+<li>shift+g 光标移至最后一行</li>
+<li>set nu 显示行号</li>
+<li>set nonu 关闭行号</li>
+<li>N shift+g 移至N行</li>
+</ul>
+<h4 id="linux文件目录">Linux文件目录</h4>
+<ul>
+<li>/  根目录	/root</li>
+<li>～ 家目录 /root/username</li>
+<li>ctrl +l ，clear 清屏</li>
+<li>mkdir 文件名 创建目录</li>
+<li>mkdir -p aa/aa1/aa2 创建多级目录</li>
+<li>touch 创建空文件</li>
+<li>cp 文件名 指定目录 复制文件至指定目录</li>
+<li>cp -r 目录名 指定目录 复制目录至指定目录</li>
+<li>rm 文件名 删除文件（有提示，不能删除目录）</li>
+<li>rm -fr——删除文件（无提示）</li>
+<li>mv 文件名 指定目录——移动文件</li>
+<li>cat 文件名 查看文件</li>
+<li>more 文件名 查看文件分页</li>
+<li>—&gt;按空格——向下移动</li>
+<li>—&gt;ctrl + b——向上移动</li>
+<li>tail -F 文件名——监控文件</li>
+<li>echo 追加内容 &raquo;文件名 &ndash;&gt;文件末追加内容（用于日志追踪）</li>
+<li>ctrl +c 退出监控</li>
+<li>ln -s[源文件][目标文件]  软连接</li>
+<li>history 历史命令</li>
+</ul>
+<h4 id="时间日期命令">时间日期命令</h4>
+<ul>
+<li>data 显示当前时间</li>
+<li>data -s 设置系统时间</li>
+<li>cal 查看日历</li>
+<li>tab 自动补充键</li>
+</ul>
+<h4 id="用户管理命令">用户管理命令</h4>
+<ul>
+<li>useradd 用户名 添加用户</li>
+<li>passwd 密码 设置密码（root用户下）</li>
+<li>userdel 删除用户</li>
+<li>id 用户名 查看用户是否存在</li>
+<li>su 切换用户</li>
+<li>vi /etc/sudoers 修改用户权限</li>
+<li>groupadd 新增用户组</li>
+<li>cat etc/group 查看组</li>
+<li>chown [最终用户][文件或目录]</li>
+<li>chown -R 修改用户所属目录和所属组</li>
+</ul>
+<h4 id="磁盘">磁盘</h4>
+<ul>
+<li>df 查看硬盘</li>
+<li>mount/unmount 挂载/卸载</li>
+</ul>
+<h4 id="搜索">搜索</h4>
+<ul>
+<li>find[匹配范围][条件] 搜索文件</li>
+<li>grep 管道符</li>
+</ul>
+<h4 id="进程">进程</h4>
+<ul>
+<li>ps -aux 查看系统中的进程</li>
+<li>top查看系统健康状态</li>
+<li>kill 进程</li>
+<li>kill -9 直接杀死进程</li>
+</ul>
+<h4 id="linux定时任务crontab">Linux定时任务Crontab</h4>
+<ul>
+<li>
+<p>crontab -e 编辑定时任务</p>
+</li>
+<li>
+<p>crontab -l 查询定时任务</p>
+</li>
+<li>
+<p>crontable -r 删除定时任务</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/BrightSails/pic/master/setContos_network/linuxBasicConfig.png" alt=""></p>
+
     </div>
   </article>
 <section id="comments">
