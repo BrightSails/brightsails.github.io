@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bigdata on BrightSails Blog</title>
-    <link>https://brightsails.github.io/categories/bigdata/</link>
-    <description>Recent content in bigdata on BrightSails Blog</description>
+    <title>linux on BrightSails Blog</title>
+    <link>https://brightsails.github.io/tags/linux/</link>
+    <description>Recent content in linux on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 04 Feb 2020 00:07:52 +0800</lastBuildDate>
     
-        <atom:link href="https://brightsails.github.io/categories/bigdata/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://brightsails.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
