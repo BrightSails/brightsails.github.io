@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Makefile设计</title>
+      <link>https://brightsails.github.io/2020/02/linux_makefile/</link>
+      <pubDate>Wed, 05 Feb 2020 00:38:30 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/02/linux_makefile/</guid>
+      <description>Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将</description>
+    </item>
+    
+    <item>
       <title>Linux命令</title>
       <link>https://brightsails.github.io/2020/02/linuxbasicconfig/</link>
       <pubDate>Tue, 04 Feb 2020 00:07:52 +0800</pubDate>
