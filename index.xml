@@ -5,44 +5,44 @@
     <link>https://brightsails.github.io/</link>
     <description>Recent content on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Feb 2020 20:50:57 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 19 Feb 2020 23:12:39 +0800</lastBuildDate>
     
         <atom:link href="https://brightsails.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Bigdata_formal_1</title>
-      <link>https://brightsails.github.io/2020/02/bigdata_formal_1/</link>
-      <pubDate>Sun, 09 Feb 2020 20:50:57 +0800</pubDate>
+      <title>Bigdata2</title>
+      <link>https://brightsails.github.io/2020/02/bigdata2/</link>
+      <pubDate>Wed, 19 Feb 2020 23:12:39 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/bigdata_formal_1/</guid>
-      <description>dwdw dwdw scs cs csc     sacas csas csacsa sacs cs   cs cs csc ccs csc   c s scsc cs    scsc sc   scs    eefefef</description>
+      <guid>https://brightsails.github.io/2020/02/bigdata2/</guid>
+      <description>Hadoop的优势 高可靠性： 因为Hadoop假设计算元素和存储会出现故障，因为它维护多个工作数据副本，在出现故障时可以对失败的节点重新分布处</description>
     </item>
     
     <item>
       <title>Makefile设计</title>
-      <link>https://brightsails.github.io/2020/02/linux_makefile/</link>
+      <link>https://brightsails.github.io/2020/02/linux1/</link>
       <pubDate>Wed, 05 Feb 2020 00:38:30 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/linux_makefile/</guid>
+      <guid>https://brightsails.github.io/2020/02/linux1/</guid>
       <description>Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将</description>
     </item>
     
     <item>
       <title>Linux命令</title>
-      <link>https://brightsails.github.io/2020/02/linuxbasicconfig/</link>
+      <link>https://brightsails.github.io/2020/02/linux2/</link>
       <pubDate>Tue, 04 Feb 2020 00:07:52 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/linuxbasicconfig/</guid>
+      <guid>https://brightsails.github.io/2020/02/linux2/</guid>
       <description>linux文件权限管理 共10位 r 读 w 写 x 执行 第1位为：d目录 -文件 l软连接代码 第2-5位为：文件所属者权限 第5-8位为：所属组 第8-10位为</description>
     </item>
     
     <item>
-      <title>Bigdata环境搭建</title>
-      <link>https://brightsails.github.io/2020/01/bigdata_1/</link>
+      <title>linux网络配置</title>
+      <link>https://brightsails.github.io/2020/01/bigdata1/</link>
       <pubDate>Fri, 31 Jan 2020 14:13:45 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/01/bigdata_1/</guid>
+      <guid>https://brightsails.github.io/2020/01/bigdata1/</guid>
       <description>大数据的特征 容量（Volume）：数据的大小决定所考虑的数据的价值和潜在的信息； 种类（Variety）：数据类型的多样性； 速度（Veloci</description>
     </item>
     

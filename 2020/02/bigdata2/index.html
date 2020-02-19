@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Bigdata2 - BrightSails Blog
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="Hadoop的优势 高可靠性： 因为Hadoop假设计算元素和存储会出现故障，因为它维护多个工作数据副本，在出现故障时可以对失败的节点重新分布处" />
+  <meta name="generator" content="Hugo 0.62.2 with theme pure" />
+  <title>Bigdata2 - BrightSails Blog</title>
+  
+  
+  <link rel="stylesheet" href="https://brightsails.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="Bigdata2" />
+<meta property="og:description" content="Hadoop的优势 高可靠性： 因为Hadoop假设计算元素和存储会出现故障，因为它维护多个工作数据副本，在出现故障时可以对失败的节点重新分布处" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://brightsails.github.io/2020/02/bigdata2/" />
+<meta property="article:published_time" content="2020-02-19T23:12:39+08:00" />
+<meta property="article:modified_time" content="2020-02-19T23:12:39+08:00" />
+<meta itemprop="name" content="Bigdata2">
+<meta itemprop="description" content="Hadoop的优势 高可靠性： 因为Hadoop假设计算元素和存储会出现故障，因为它维护多个工作数据副本，在出现故障时可以对失败的节点重新分布处">
+<meta itemprop="datePublished" content="2020-02-19T23:12:39&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-19T23:12:39&#43;08:00" />
+<meta itemprop="wordCount" content="3276">
+
+
+
+<meta itemprop="keywords" content="hadoop," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bigdata2"/>
+<meta name="twitter:description" content="Hadoop的优势 高可靠性： 因为Hadoop假设计算元素和存储会出现故障，因为它维护多个工作数据副本，在出现故障时可以对失败的节点重新分布处"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/Brightsails" target="_blank">
+            <img class="img-circle img-rotate" src="https://brightsails.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">BrightSails</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">Students</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">阶段目标：高数基础过完</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                2020/1/21
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://brightsails.github.io/categories/bigdata/" class="category-list-link">bigdata</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://brightsails.github.io/categories/linux/" class="category-list-link">linux</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://brightsails.github.io/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="category-list-link">环境搭建</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://brightsails.github.io/tags/hadoop/" class="tag-list-link">hadoop</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://brightsails.github.io/tags/linux/" class="tag-list-link">linux</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://brightsails.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="tag-list-link">环境搭建</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/02/bigdata2/" class="title">Bigdata2</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-19 23:12:39 &#43;0800 CST" itemprop="datePublished">2020-02-19</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/02/linux1/" class="title">Makefile设计</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-05 00:38:30 &#43;0800 CST" itemprop="datePublished">2020-02-05</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/02/linux2/" class="title">Linux命令</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-02-04 00:07:52 &#43;0800 CST" itemprop="datePublished">2020-02-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/01/bigdata1/" class="title">linux网络配置</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-01-31 14:13:45 &#43;0800 CST" itemprop="datePublished">2020-01-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/01/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/" class="title">hugo博客的搭建</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-01-19 23:06:02 &#43;0800 CST" itemprop="datePublished">2020-01-19</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/02/bigdata2/"
+    >Bigdata2</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://brightsails.github.io/2020/02/bigdata2/" class="article-date">
+  <time datetime="2020-02-19 23:12:39 &#43;0800 CST" itemprop="datePublished">2020-02-19</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/bigdata/"> bigdata </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/hadoop/"> hadoop </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/bigdata2/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 3276字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 7分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h4 id="hadoop的优势">Hadoop的优势</h4>
+<ul>
+<li><strong>高可靠性：</strong></li>
+</ul>
+<p>因为Hadoop假设计算元素和存储会出现故障，因为它维护多个工作数据副本，在出现故障时可以对失败的节点重新分布处理。</p>
+<ul>
+<li><strong>高扩展性：</strong></li>
+</ul>
+<p>在集群间分配任务数据，可方便的扩展数以千计的节点。</p>
+<ul>
+<li><strong>高效性：</strong></li>
+</ul>
+<p>在MapReduce的思想下，Hadoop是并行工作的，以加快任务处理速度。</p>
+<ul>
+<li><strong>高容错性：</strong></li>
+</ul>
+<p>自动保存多份副本数据，并且能够自动将失败的任务重新分配。</p>
+<ul>
+<li>
+<p><strong>Hadoop****组成</strong></p>
+</li>
+<li>
+<p>Hadoop HDFS：</p>
+</li>
+<li>
+<p>一个高可靠、高吞吐量的分布式文件系统。</p>
+</li>
+<li>
+<p>Hadoop MapReduce：</p>
+</li>
+<li>
+<p>一个分布式的离线并行计算框架。</p>
+</li>
+<li>
+<p>Hadoop YARN：</p>
+</li>
+<li>
+<p>作业调度与集群资源管理的框架。</p>
+</li>
+<li>
+<p>Hadoop Common：</p>
+</li>
+<li>
+<p>支持其他模块的工具模块（Configuration、RPC、序列化机制、日志操作）。</p>
+</li>
+<li>
+<p><strong>HDFS****架构概述</strong></p>
+</li>
+<li>
+<p><strong>Namenode</strong>**：存储****元数据**</p>
+</li>
+<li>
+<p><strong>Datanode</strong>**：存储数据的节点，会对数据块进行校验**</p>
+</li>
+<li>
+<p><strong>Secondarynamenode</strong>**：监控namenode 的元数据，****每隔一定的时间进行元数据的合并**</p>
+</li>
+<li>
+<p><strong>YARN****架构概述</strong></p>
+</li>
+<li>
+<p><strong>ResourceManager(rm)****：</strong></p>
+</li>
+</ul>
+<p>处理客户端请求、启动/监控ApplicationMaster、监控NodeManager、资源分配与调度</p>
+<ul>
+<li><strong>NodeManager(nm)****：</strong></li>
+</ul>
+<p>单个节点上的资源管理、处理来自ResourceManager的命令、处理来自ApplicationMaster的命令</p>
+<ul>
+<li><strong>ApplicationMaster</strong>**：**</li>
+</ul>
+<p>数据切分、为应用程序申请资源，并分配给内部任务、任务监控与容错</p>
+<ul>
+<li><strong>Container</strong>**：**</li>
+</ul>
+<p>对任务运行环境的抽象，封装了CPU、内存等多维资源以及环境变量、启动命令等任务运行相关的信息</p>
+<ul>
+<li>
+<p><strong>MapReduce****架构概述</strong></p>
+</li>
+<li>
+<p>MapReduce将计算过程分为两个阶段：Map和Reduce</p>
+</li>
+<li>
+<p>Map阶段并行处理输入数据</p>
+</li>
+<li>
+<p>Reduce阶段对Map结果进行汇总</p>
+</li>
+</ul>
+<p><strong>三 Hadoop运行环境搭建</strong></p>
+<p><strong>环境配置</strong></p>
+<ul>
+<li>
+<p><strong>关闭防火墙</strong></p>
+</li>
+<li>
+<p>关闭防火墙：systemctl stop firewalld.service</p>
+</li>
+<li>
+<p>禁用防火墙：systemctl disable firewalld.service</p>
+</li>
+<li>
+<p>查看防火墙：systemctl status firewalld.service</p>
+</li>
+</ul>
+<p>(学习阶段关闭防火墙)</p>
+<ul>
+<li>
+<p>关闭Selinux：vi /etc/selinux /config</p>
+</li>
+<li>
+<p>将SELINUX=enforcing改为SELINUX=disabled</p>
+</li>
+<li>
+<p><strong>修改IP</strong></p>
+</li>
+<li>
+<p>善用Tab键</p>
+</li>
+<li>
+<p>vi     /etc/sysconfig/network-scripts/eno16777736</p>
+</li>
+<li>
+<p>BOOTPROTO=static</p>
+</li>
+<li>
+<p>ONBOOT=yes</p>
+</li>
+<li></li>
+<li>
+<p>IPADDR=192.168.X.51</p>
+</li>
+<li>
+<p>GATEWAY=192.168.X.2</p>
+</li>
+<li>
+<p>DNS1=8.8.8.8</p>
+</li>
+<li>
+<p>DNS2=8.8.4.4</p>
+</li>
+<li>
+<p>NETMASK=255.255.255.0</p>
+</li>
+<li>
+<p>vi /etc/resolv.conf</p>
+</li>
+<li>
+<p>nameserver 8.8.8.8</p>
+</li>
+<li>
+<p>nameserver 8.8.4.4</p>
+</li>
+</ul>
+<p>重启网卡：servie network restart</p>
+<ul>
+<li>
+<p><strong>修改主机名</strong></p>
+</li>
+<li>
+<p>hostnamectl set-hostname 主机名</p>
+</li>
+<li>
+<p><strong>IP****和主机名关系映射</strong></p>
+</li>
+<li>
+<p>vi /etc/hosts</p>
+</li>
+</ul>
+<p>192.168.1.121 bigdata111</p>
+<p>192.168.1.122 bigdata112</p>
+<p>192.168.1.123 bigdata113</p>
+<ul>
+<li>在windows的C:\Windows\System32\drivers\etc路径下找到hosts并添加</li>
+</ul>
+<p>192.168.1.121 bigdata111</p>
+<p>192.168.1.122 bigdata112</p>
+<p>192.168.1.123 bigdata113</p>
+<p>修改主机名：</p>
+<p>vi /etc/hostname</p>
+<p>bigdata111</p>
+<ul>
+<li><strong>Xshell</strong></li>
+</ul>
+<p>输入IP、用户名和密码</p>
+<ul>
+<li>
+<p><strong>在opt目录下创建文件（此步可选）</strong></p>
+</li>
+<li>
+<p><strong>创建itstar用户</strong></p>
+</li>
+<li>
+<p>adduser itstar</p>
+</li>
+<li>
+<p>passwd itstar</p>
+</li>
+<li>
+<p><strong>设置itstar用户具有root权限</strong></p>
+</li>
+<li>
+<p>vi /etc/sudoers 92行 找到root ALL=(ALL) ALL</p>
+</li>
+<li>
+<p>复制一行：itstar     ALL=(ALL) ALL</p>
+</li>
+<li>
+<p><strong>安装jdk</strong></p>
+</li>
+<li>
+<p>卸载现有jdk</p>
+</li>
+</ul>
+<p>（1）查询是否安装java软件：</p>
+<p>rpm -qa|grep java</p>
+<p>（2）如果安装的版本低于1.7，卸载该jdk：</p>
+<p>rpm -e 软件包名字</p>
+<ul>
+<li>在/opt目录下创建两个子文件</li>
+</ul>
+<p>mkdir /opt/mod /opt/soft</p>
+<ul>
+<li>解压jdk到/opt/module目录下</li>
+</ul>
+<p>tar -zxvf jdk-8u144-linux-x64.tar.gz -C /opt/mod/</p>
+<ul>
+<li>配置jdk环境变量</li>
+</ul>
+<p><strong>vi /etc/profile</strong></p>
+<pre><code>export JAVA_HOME=/opt/mod/jdk1.8.0_144
+
+export PATH=$PATH:$JAVA_HOME/bin:$PATH
+:为分隔符                        后面的PATH为系统的path路径
+建议$PATH写前面，若自己的path写错，不影响系统PATH
+source /etc/profile
+应用profile
+</code></pre>
+<ul>
+<li>
+<p>测试jdk安装成功</p>
+</li>
+<li>
+<p>java -version</p>
+</li>
+<li>
+<p>java version     &ldquo;1.8.0_144&rdquo;</p>
+</li>
+</ul>
+<p><strong>四 Hadoop运行模式</strong></p>
+<p><strong>伪/完全分布式部署Hadoop</strong></p>
+<ul>
+<li>
+<p><strong>SSH****无密码登录</strong></p>
+</li>
+<li>
+<p>生成公钥和私钥：ssh-keygen -t rsa</p>
+</li>
+</ul>
+<p>然后敲（三个回车），就会生成两个文件id_rsa（私钥）、id_rsa.pub（公钥）</p>
+<ul>
+<li>
+<p>将公钥拷贝到要免密登录的目标机器上</p>
+</li>
+<li>
+<p>ssh-copy-id 主机名1</p>
+</li>
+<li>
+<p>ssh-copy-id 主机名2</p>
+</li>
+<li>
+<p>ssh-copy-id 主机名3</p>
+</li>
+</ul>
+<p>注：在另外两台机器上分别执行，共执行9遍</p>
+<ul>
+<li><strong>.ssh****文件夹下的文件功能解释</strong></li>
+</ul>
+<p>（1）~/.ssh/known_hosts ：记录ssh访问过计算机的公钥(public key)</p>
+<p>（2）id_rsa ：生成的私钥</p>
+<p>（3）id_rsa.pub ：生成的公钥</p>
+<p>（4）authorized_keys ：存放授权过得无秘登录服务器公钥</p>
+<ul>
+<li><strong>配置集群(表格版)</strong></li>
+</ul>
+<ol>
+<li>集群部署规划:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>bigdata111</th>
+<th>bigdata112</th>
+<th>bigdata113</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HDFS</td>
+<td>NameNode  SecondaryNameNode  DataNode</td>
+<td>DataNode</td>
+<td>DataNode</td>
+</tr>
+<tr>
+<td>YARN</td>
+<td>NodeManager</td>
+<td>ResourceManager  NodeManager</td>
+<td>NodeManager</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>配置文件：</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>文件</strong></th>
+<th><strong>配置</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>core-site.xml</td>
+<td><!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->fs.defaultFS<!-- raw HTML omitted -->  <!-- raw HTML omitted -->hdfs://主机名1:9000<!-- raw HTML omitted -->  <!-- raw HTML omitted -->     <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->hadoop.tmp.dir<!-- raw HTML omitted -->  <!-- raw HTML omitted -->/opt/module/hadoop-2.X.X/data/tmp<!-- raw HTML omitted -->  <!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td>hdfs-site.xml</td>
+<td><!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->dfs.replication<!-- raw HTML omitted -->  <!-- raw HTML omitted -->3<!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->dfs.namenode.secondary.http-address<!-- raw HTML omitted -->  <!-- raw HTML omitted -->主机名1:50090<!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->dfs.permissions<!-- raw HTML omitted -->  <!-- raw HTML omitted -->false<!-- raw HTML omitted -->  <!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td>yarn-site.xml</td>
+<td><!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->yarn.nodemanager.aux-services<!-- raw HTML omitted -->  <!-- raw HTML omitted -->mapreduce_shuffle<!-- raw HTML omitted -->  <!-- raw HTML omitted -->     <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->yarn.resourcemanager.hostname<!-- raw HTML omitted -->  <!-- raw HTML omitted -->主机名1<!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->yarn.log-aggregation-enable<!-- raw HTML omitted -->  <!-- raw HTML omitted -->true<!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->yarn.log-aggregation.retain-seconds<!-- raw HTML omitted -->  <!-- raw HTML omitted -->604800<!-- raw HTML omitted -->  <!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td>mapred-site.xml</td>
+<td><!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->mapreduce.framework.name<!-- raw HTML omitted -->  <!-- raw HTML omitted -->yarn<!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->mapreduce.jobhistory.address<!-- raw HTML omitted -->  <!-- raw HTML omitted -->主机名1:10020<!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->  <!-- raw HTML omitted -->mapreduce.jobhistory.webapp.address<!-- raw HTML omitted -->  <!-- raw HTML omitted -->主机名1:19888<!-- raw HTML omitted -->  <!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td>hadoop-env.sh、yarn-env.sh、mapred-env.sh（分别在这些的文件中添加下面的路径）     export JAVA_HOME=/opt/module/jdk1.8.0_144（注：是自己安装的路径）</td>
+<td></td>
+</tr>
+<tr>
+<td>slaves</td>
+<td>bigdata111、bigdata112、bigdata113（自己设置的主机名）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>格式化Namenode：</li>
+</ul>
+<p>hdfs namenode -format</p>
+<p><strong>为什么要格式化？</strong></p>
+<p>NameNode主要被用来管理整个分布式文件系统的命名空间(实际上就是目录和文件)的元数据信息，同时为了保证数据的可靠性，还加入了操作日志，所以，NameNode会持久化这些数据(保存到本地的文件系统中)。对于第一次使用HDFS，在启动NameNode时，需要先执行-format命令，然后才能正常启动NameNode节点的服务。</p>
+<p><strong>格式化做了哪些事情？</strong></p>
+<p>在NameNode节点上，有两个最重要的路径，分别被用来存储元数据信息和操作日志，而这两个路径来自于配置文件，它们对应的属性分别是dfs.name.dir和dfs.name.edits.dir，同时，它们默认的路径均是/tmp/hadoop/dfs/name。格式化时，NameNode会清空两个目录下的所有文件，之后，会在目录dfs.name.dir下创建文件</p>
+<p><strong>hadoop.tmp.dir</strong> 这个配置，会让dfs.name.dir和dfs.name.edits.dir会让两个目录的文件生成在一个目录里</p>
+<ul>
+<li>启动集群得命令：</li>
+</ul>
+<p>start-all.sh</p>
+<p>Namenode的主节点：sbin/start-dfs.sh</p>
+<p>Yarn的主节点：sbin/start-yarn.sh</p>
+<p>注意：Namenode和ResourceManger如果不是同一台机器，不能在NameNode上启动 yarn，应该在ResouceManager所在的机器上启动yarn。</p>
+<ul>
+<li><strong>scp****文件传输</strong></li>
+</ul>
+<p>实现两台远程机器之间的文件传输（bigdata112主机文件拷贝到bigdata113主机上）</p>
+<p>scp -r [文件] 用户@主机名：绝对路径</p>
+<p>注：伪分布式是一台、完全分布是三台</p>
+<ul>
+<li><strong>完全分布式</strong></li>
+</ul>
+<p>步骤：</p>
+<p>1）克隆2台客户机（关闭防火墙、静态ip、主机名称）</p>
+<p>2）安装jdk</p>
+<p>3）配置环境变量</p>
+<p>4）安装hadoop</p>
+<p>5）配置环境变量</p>
+<p>export JAVA_HOME=/opt/mod/jdk1.8.0_144</p>
+<p>export HADOOP_HOME=/opt/mod/hadoop-2.8.4</p>
+<p>export PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME\bin:$HADOOP_HOME\sbin</p>
+<p>6）安装ssh</p>
+<p>7）配置集群</p>
+<p>8）启动测试集群</p>
+<p>注：此配置直接使用虚拟机克隆伪分布式两台即可</p>
+<ul>
+<li>
+<p><strong>自带官方wordcount案例</strong></p>
+</li>
+<li>
+<p><strong>随意上传一个文本文件</strong></p>
+</li>
+<li>
+<p>**上传命令：**hadoop fs -put 文件名 /</p>
+</li>
+<li>
+<p><strong>执行命令：</strong></p>
+</li>
+</ul>
+<p>hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.X.X.jar wordcount /入 /出</p>
+<ul>
+<li><strong>命令解析：</strong></li>
+</ul>
+<p>hadoop jar 路径的jar包 全类名 输入路径 输出路径</p>
+<ul>
+<li><strong>查看结果：</strong></li>
+</ul>
+<p>hadoop fs -cat 路径</p>
+<p><strong>Hadoop****启动和停止命令：</strong></p>
+<p>以下命令都在$HADOOP_HOME/sbin下，如果直接使用，记得配置环境变量</p>
+<table>
+<thead>
+<tr>
+<th>启动/停止历史服务器</th>
+<th>mr-jobhistory-daemon.sh  start|stop historyserver</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>启动/停止总资源管理器</td>
+<td>yarn-daemon.sh  start|stop resourcemanager</td>
+</tr>
+<tr>
+<td>启动/停止节点管理器</td>
+<td>yarn-daemon.sh  start|stop nodemanager</td>
+</tr>
+<tr>
+<td>启动/停止 NN 和 DN</td>
+<td>start|stop-dfs.sh</td>
+</tr>
+<tr>
+<td>启动/停止 RN 和 NM</td>
+<td>start|stop-yarn.sh</td>
+</tr>
+<tr>
+<td>启动/停止 NN、DN、RN、NM</td>
+<td>start|stop-all.sh</td>
+</tr>
+<tr>
+<td>启动/停止 NN</td>
+<td>hadoop-daemon.sh  start|stop namenode</td>
+</tr>
+<tr>
+<td>启动/停止 DN</td>
+<td>hadoop-daemon.sh  start|stop datanode</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://brightsails.github.io/2020/02/linux1/" title="Makefile设计"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/Brightsails" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://brightsails.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    @2019-2020
+    <div class="publishby">
+        sportex real brave persistent
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://brightsails.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://brightsails.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/brightsails.github.io\/',
+            CONTENT_URL: 'https:\/\/brightsails.github.io\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://brightsails.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>
