@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Makefile设计 - BrightSails Blog
-      </title>
+        BrightSails Blog</title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,32 +22,25 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将" />
-  <meta name="generator" content="Hugo 0.62.2 with theme pure" />
-  <title>Makefile设计 - BrightSails Blog</title>
   
+  <meta name="generator" content="Hugo 0.62.2 with theme pure" />
+  <title>BrightSails Blog</title>
+  
+  <link rel="alternate" type="application/rss+xml" href="https://brightsails.github.io/tags/hdfs/index.xml" title="BrightSails Blog" />
   
   <link rel="stylesheet" href="https://brightsails.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="Makefile设计" />
-<meta property="og:description" content="Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://brightsails.github.io/2020/02/linux1/" />
-<meta property="article:published_time" content="2020-02-05T00:38:30+08:00" />
-<meta property="article:modified_time" content="2020-02-05T00:38:30+08:00" />
-<meta itemprop="name" content="Makefile设计">
-<meta itemprop="description" content="Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将">
-<meta itemprop="datePublished" content="2020-02-05T00:38:30&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-05T00:38:30&#43;08:00" />
-<meta itemprop="wordCount" content="350">
-
-
-
-<meta itemprop="keywords" content="Linux," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Makefile设计"/>
-<meta name="twitter:description" content="Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将"/>
+  <meta property="og:title" content="hdfs" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://brightsails.github.io/tags/hdfs/" />
+<meta property="og:updated_time" content="2020-02-20T20:36:57+08:00" />
+<meta itemprop="name" content="hdfs">
+<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="hdfs"/>
+<meta name="twitter:description" content=""/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -256,144 +248,40 @@
 
     
     
-<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
-    <h4 class="toc-title">文章目录</h4>
-    <nav id="toc" class="js-toc toc">
-
-    </nav>
-  </div>
-</aside>
-<main class="main" role="main"><div class="content">
-  <article id="-" class="article article-type-" itemscope
-    itemtype="http://schema.org/BlogPosting">
-    
-    <div class="article-header">
-      <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/02/linux1/"
-    >Makefile设计</a
-  >
-</h1>
-
-      <div class="article-meta">
+<main class="main" role="main">
+    <article class="content article article-tags post-type-list" itemscope="">
+        <header class="article-header">
+            <h1 itemprop="name" class="hidden-xs">hdfs</h1>
+            <p class="text-muted hidden-xs">共 4 个标签</p>
+            <nav role="navigation" id="nav-main" class="okayNav">
+                <ul>
+                    <li><a href="https://brightsails.github.io/tags">All</a></li>
+                    <li><a href="https://brightsails.github.io/tags/hadoop/">hadoop</a></li>
+                    <li><a href="https://brightsails.github.io/tags/hdfs/">hdfs</a></li>
+                    <li><a href="https://brightsails.github.io/tags/linux/">Linux</a></li>
+                    <li><a href="https://brightsails.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">环境搭建</a></li>
+                </ul>
+            </nav>
+        </header>
         
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/02/linux1/" class="article-date">
-  <time datetime="2020-02-05 00:38:30 &#43;0800 CST" itemprop="datePublished">2020-02-05</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/linux/"> Linux </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/linux/"> Linux </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/linux1/#comments"
-            class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 350字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
-      </div>
-    </div>
-    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h3 id="linux中makefile设计">Linux中Makefile设计</h3>
-<h4 id="1编译流程">1.编译流程</h4>
-<pre><code>1.预编译
-gcc -E hello.c -o hello.i
-目的：
-	1.展开宏定义
-	2.引入头文件，将.h引入.c
-	
-2.汇编
-gcc -S hello.i -o hello.s
-目的：
-	将C语言转换为汇编代码
-3.编译
-gcc -c hello.s -o hello.o
-4.链接
-gcc -o hello hello.o
-
-	-S 汇编
-	-o 输出
-	-c 编译
-linux对文件后缀没有判断
-</code></pre>
-<p><img src="https://raw.githubusercontent.com/BrightSails/pic/master/setContos_network/linux_makefile.png" alt=""></p>
-<p><strong><strong>按照这个顺序来写</strong></strong></p>
-<p>使用MakeFile命令默认在当前目录下寻找文件名为MakeFile的文件</p>
-<h4 id="2设计makefile">2.设计makefile</h4>
-<h5 id="显示规则">显示规则</h5>
-<pre><code>	//要对生成的目标所添加的依赖
-	格式：
-	target:dep
-		cmd
-	//makefile先检测依赖关系是否存在，若存在则执行代码，否则跳过，查询其他指令是否能达成依赖条件
-	hello.i:hello.c
-	gcc -E hello.c -o hello.i
-</code></pre>
-<h5 id="变量">变量</h5>
-<p>OBJ =
-OBJ :=
-OBJ +=</p>
-<h5 id="头对象">头对象</h5>
-<p>TARGET=要生成的文件名
-调用：
-$(文件名)</p>
-<h5 id="尾对象">尾对象：</h5>
-<p>.PHONY:
-rm -rf $(变量名)
-调用方法： make clean</p>
-<h5 id="通配符">通配符</h5>
-<ul>
-<li>% 任意一个</li>
-<li>？ 所有</li>
-<li>*所有</li>
-<li>$@ 代表目标文件</li>
-<li>$^ 代表依赖文件</li>
-<li>$&lt; 代表第一个依赖文件</li>
-</ul>
-
-    </div>
-  </article>
-<section id="comments">
-</section>
-
-</div><nav class="bar bar-footer clearfix" data-stick-bottom>
-    <div class="bar-inner">
-        <ul class="pager pull-left">
-            <li class="prev">
-                <a href="https://brightsails.github.io/2020/02/linux2/" title="Linux命令"><i
-                        class="icon icon-angle-left"
-                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="https://brightsails.github.io/2020/02/bigdata2/"
-                    title="Bigdata2"><span>上一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
-            </li>
-            
-            <li class="toggle-toc">
-                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
-                    title="文章目录" role="button">
-                    <span>[&nbsp;</span><span>文章目录</span>
-                    <i class="text-collapsed icon icon-anchor"></i>
-                    <i class="text-in icon icon-close"></i>
-                    <span>]</span>
-                </a>
-            </li>
-        </ul>
-        <div class="bar-right">
-            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
-                data-mobile-sites="weibo,qq,qzone"></div>
+        <div class="article-body">
+            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="panel-body">
+        <div class="article-meta">
+            <time datetime="2020-02-20 20:36:57 &#43;0800 CST"
+                itemprop="datePublished">2020-02-20</time>
         </div>
+        <h3 class="article-title" itemprop="name">
+            <a class="article-link" href="https://brightsails.github.io/2020/02/bigdata3/">Bigdata3</a>
+        </h3>
     </div>
-</nav>
-
+    <div class="panel-footer">
+        <a href="https://brightsails.github.io/tags/hdfs" class="label label-default mb">hdfs</a>
+    </div>
+</article>
+            </div>
+        </div>
+    </article>
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/Brightsails" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -467,7 +355,6 @@ rm -rf $(变量名)
         hasInnerContainers: true,
     });
 </script>
-
 
   </body>
 </html>
