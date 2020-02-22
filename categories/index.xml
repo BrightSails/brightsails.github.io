@@ -5,31 +5,40 @@
     <link>https://brightsails.github.io/categories/</link>
     <description>Recent content in Categories on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Feb 2020 20:36:57 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2020 11:58:01 +0800</lastBuildDate>
     
         <atom:link href="https://brightsails.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hadoop_error</title>
+      <title>HDFS基本操作</title>
+      <link>https://brightsails.github.io/2020/02/bigdata4/</link>
+      <pubDate>Fri, 21 Feb 2020 11:58:01 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/02/bigdata4/</guid>
+      <description>3.2 通过API操作HDFS 3.2.1 HDFS获取文件系统 1）详细代码 /** * 打印本地hadoop地址值 * IO的方式写代码 */ @Test public void intiHDFS() throws IOException { //F2 可以快速的定位错</description>
+    </item>
+    
+    <item>
+      <title>Hadoop配置错误</title>
       <link>https://brightsails.github.io/2020/02/hadoop_error/</link>
       <pubDate>Thu, 20 Feb 2020 23:26:22 +0800</pubDate>
       
       <guid>https://brightsails.github.io/2020/02/hadoop_error/</guid>
-      <description>**1.**hadoop fs -put 命令出错 ![博客目录]**2.**hadoop配置错误，需要有JAVA_HOME ![博客目录]![]</description>
+      <description>1.hadoop fs -put 命令出错 2.hadoop配置错误，需要有JAVA_HOME</description>
     </item>
     
     <item>
-      <title>Bigdata3</title>
+      <title>HDFS概念</title>
       <link>https://brightsails.github.io/2020/02/bigdata3/</link>
       <pubDate>Thu, 20 Feb 2020 20:36:57 +0800</pubDate>
       
       <guid>https://brightsails.github.io/2020/02/bigdata3/</guid>
-      <description>一 HDFS概念 1.1 概念 HDFS**，它是一个文件系统**，全称：**Hadoop Distributed File System**，用于存储文件通过目录树来定位文件；**其</description>
+      <description>一 HDFS概念 1.1 概念 HDFS，它是一个文件系统，**全称：Hadoop Distributed File System，用于存储文件通过目录树来定位文件；其次，它是分布式的</description>
     </item>
     
     <item>
-      <title>Ssh</title>
+      <title>SSH</title>
       <link>https://brightsails.github.io/2020/02/ssh/</link>
       <pubDate>Thu, 20 Feb 2020 19:40:14 +0800</pubDate>
       
@@ -38,7 +47,7 @@
     </item>
     
     <item>
-      <title>Bigdata2</title>
+      <title>hadoop配置</title>
       <link>https://brightsails.github.io/2020/02/bigdata2/</link>
       <pubDate>Wed, 19 Feb 2020 23:12:39 +0800</pubDate>
       

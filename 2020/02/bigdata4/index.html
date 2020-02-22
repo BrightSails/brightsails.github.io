@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Hadoop配置错误 - BrightSails Blog
+        HDFS基本操作 - BrightSails Blog
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,32 +23,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="1.hadoop fs -put 命令出错 2.hadoop配置错误，需要有JAVA_HOME" />
+  <meta name="description" content="3.2 通过API操作HDFS 3.2.1 HDFS获取文件系统 1）详细代码 /** * 打印本地hadoop地址值 * IO的方式写代码 */ @Test public void intiHDFS() throws IOException { //F2 可以快速的定位错" />
   <meta name="generator" content="Hugo 0.62.2 with theme pure" />
-  <title>Hadoop配置错误 - BrightSails Blog</title>
+  <title>HDFS基本操作 - BrightSails Blog</title>
   
   
   <link rel="stylesheet" href="https://brightsails.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="Hadoop配置错误" />
-<meta property="og:description" content="1.hadoop fs -put 命令出错 2.hadoop配置错误，需要有JAVA_HOME" />
+  <meta property="og:title" content="HDFS基本操作" />
+<meta property="og:description" content="3.2 通过API操作HDFS 3.2.1 HDFS获取文件系统 1）详细代码 /** * 打印本地hadoop地址值 * IO的方式写代码 */ @Test public void intiHDFS() throws IOException { //F2 可以快速的定位错" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://brightsails.github.io/2020/02/hadoop_error/" />
-<meta property="article:published_time" content="2020-02-20T23:26:22+08:00" />
-<meta property="article:modified_time" content="2020-02-20T23:26:22+08:00" />
-<meta itemprop="name" content="Hadoop配置错误">
-<meta itemprop="description" content="1.hadoop fs -put 命令出错 2.hadoop配置错误，需要有JAVA_HOME">
-<meta itemprop="datePublished" content="2020-02-20T23:26:22&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-20T23:26:22&#43;08:00" />
-<meta itemprop="wordCount" content="32">
+<meta property="og:url" content="https://brightsails.github.io/2020/02/bigdata4/" />
+<meta property="article:published_time" content="2020-02-21T11:58:01+08:00" />
+<meta property="article:modified_time" content="2020-02-21T11:58:01+08:00" />
+<meta itemprop="name" content="HDFS基本操作">
+<meta itemprop="description" content="3.2 通过API操作HDFS 3.2.1 HDFS获取文件系统 1）详细代码 /** * 打印本地hadoop地址值 * IO的方式写代码 */ @Test public void intiHDFS() throws IOException { //F2 可以快速的定位错">
+<meta itemprop="datePublished" content="2020-02-21T11:58:01&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-21T11:58:01&#43;08:00" />
+<meta itemprop="wordCount" content="2261">
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hadoop配置错误"/>
-<meta name="twitter:description" content="1.hadoop fs -put 命令出错 2.hadoop配置错误，需要有JAVA_HOME"/>
+<meta itemprop="keywords" content="hdfs," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="HDFS基本操作"/>
+<meta name="twitter:description" content="3.2 通过API操作HDFS 3.2.1 HDFS获取文件系统 1）详细代码 /** * 打印本地hadoop地址值 * IO的方式写代码 */ @Test public void intiHDFS() throws IOException { //F2 可以快速的定位错"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -273,8 +273,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/02/hadoop_error/"
-    >Hadoop配置错误</a
+    href="/2020/02/bigdata4/"
+    >HDFS基本操作</a
   >
 </h1>
 
@@ -282,26 +282,402 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/02/hadoop_error/" class="article-date">
-  <time datetime="2020-02-20 23:26:22 &#43;0800 CST" itemprop="datePublished">2020-02-20</time>
+<a href="https://brightsails.github.io/2020/02/bigdata4/" class="article-date">
+  <time datetime="2020-02-21 11:58:01 &#43;0800 CST" itemprop="datePublished">2020-02-21</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/error/"> error </a>
-</span>
+  <a class="article-category-link" href="/categories/bigdata/"> bigdata </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/hdfs/"> hdfs </a>
+  </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/hadoop_error/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/bigdata4/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 32字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2261字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h4 id="1hadoop-fs--put-命令出错">1.hadoop fs -put 命令出错</h4>
-<p><img src="https://raw.githubusercontent.com/BrightSails/pic/master/Hadoop/hadoop_error1.png" alt=""></p>
-<h4 id="2hadoop配置错误需要有java_home">2.hadoop配置错误，需要有JAVA_HOME</h4>
-<p><img src="https://raw.githubusercontent.com/BrightSails/pic/master/Hadoop/hadoop_error2.png" alt=""></p>
+      <h2 id="32-通过api操作hdfs">3.2 通过API操作HDFS</h2>
+<h3 id="321-hdfs获取文件系统">3.2.1 HDFS获取文件系统</h3>
+<p>1）详细代码</p>
+<pre><code>/**
+   * 打印本地hadoop地址值
+   * IO的方式写代码
+   */
+  @Test
+  public void intiHDFS() throws IOException {
+      //F2 可以快速的定位错误
+      // alt + enter自动找错误
+      //1.创建配信信息对象 ctrl + alt + v  后推前  ctrl + shitl + enter 补全
+      Configuration conf = new Configuration();
+
+      //2.获取文件系统
+      FileSystem fs = FileSystem.get(conf);
+
+      //3.打印文件系统
+      System.out.println(fs.toString());
+  }
+
+</code></pre>
+<h3 id="322-hdfs文件上传">3.2.2 HDFS文件上传</h3>
+<pre><code>/**
+    * 上传代码
+    * 注意：如果上传的内容大于128MB,则是2块
+    */
+   @Test
+   public void putFileToHDFS() throws Exception {
+       //注：import org.apache.hadoop.conf.Configuration;
+       //ctrl + alt + v 推动出对象
+       //1.创建配置信息对象
+       Configuration conf = new Configuration();
+
+       //2.设置部分参数
+       conf.set(&quot;dfs.replication&quot;,&quot;2&quot;);
+
+       //3.找到HDFS的地址
+       FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;), conf, &quot;root&quot;);
+
+       //4.上传本地Windows文件的路径
+       Path src = new Path(&quot;D:\\hadoop-2.7.2.rar&quot;);
+
+       //5.要上传到HDFS的路径
+       Path dst = new Path(&quot;hdfs://bigdata111:9000/&quot;);
+
+       //6.以拷贝的方式上传，从src -&gt; dst
+       fs.copyFromLocalFile(src,dst);
+
+       //7.关闭
+       fs.close();
+
+       System.out.println(&quot;上传成功&quot;);
+}
+
+</code></pre>
+<h3 id="323-hdfs文件下载">3.2.3 HDFS文件下载</h3>
+<pre><code>  /**
+    * hadoop fs -get /HDFS文件系统
+    * @throws Exception
+    */
+   @Test
+   public void getFileFromHDFS() throws Exception {
+       //1.创建配置信息对象  Configuration:配置
+       Configuration conf = new Configuration();
+
+       //2.找到文件系统
+       //final URI uri     ：HDFS地址
+       //final Configuration conf：配置信息
+       // String user ：Linux用户名
+       FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;), conf, &quot;root&quot;);
+
+       //3.下载文件
+       //boolean delSrc:是否将原文件删除
+       //Path src ：要下载的路径
+       //Path dst ：要下载到哪
+       //boolean useRawLocalFileSystem ：是否校验文件
+       fs.copyToLocalFile(false,new Path(&quot;hdfs://bigdata111:9000/README.txt&quot;),
+               new Path(&quot;F:\\date\\README.txt&quot;),true);
+
+       //4.关闭fs
+       //alt + enter 找错误
+       //ctrl + alt + o  可以快速的去除没有用的导包
+       fs.close();
+       System.out.println(&quot;下载成功&quot;);
+   }
+
+</code></pre>
+<h3 id="324-hdfs目录创建">3.2.4 HDFS目录创建</h3>
+<pre><code>/**
+  * hadoop fs -mkdir /xinshou
+  */
+ @Test
+ public void mkmdirHDFS() throws Exception {
+     //1.创新配置信息对象
+     Configuration configuration = new Configuration();
+
+     //2.链接文件系统
+     //final URI uri  地址
+     //final Configuration conf  配置
+     //String user   Linux用户
+     FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;), configuration, &quot;root&quot;);
+
+     //3.创建目录
+     fs.mkdirs(new Path(&quot;hdfs://bigdata111:9000/Good/Goog/Study&quot;));
+
+     //4.关闭
+     fs.close();
+     System.out.println(&quot;创建文件夹成功&quot;);
+ }
+
+</code></pre>
+<h3 id="325-hdfs文件夹删除">3.2.5 HDFS文件夹删除</h3>
+<pre><code>/**
+    * hadoop fs -rm -r /文件
+    */
+   @Test
+   public void deleteHDFS() throws Exception {
+       //1.创建配置对象
+       Configuration conf = new Configuration();
+
+       //2.链接文件系统
+       //final URI uri, final Configuration conf, String user
+       //final URI uri  地址
+       //final Configuration conf  配置
+       //String user   Linux用户
+       FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;), conf, &quot;root&quot;);
+
+       //3.删除文件
+       //Path var1   : HDFS地址
+       //boolean var2 : 是否递归删除
+       fs.delete(new Path(&quot;hdfs://bigdata111:9000/a&quot;),false);
+
+       //4.关闭
+       fs.close();
+       System.out.println(&quot;删除成功啦&quot;);
+   }
+
+</code></pre>
+<h3 id="326-hdfs文件名更改">3.2.6 HDFS文件名更改</h3>
+<pre><code>````
+</code></pre>
+<p>@Test
+public void renameAtHDFS() throws Exception{
+// 1 创建配置信息对象
+Configuration configuration = new Configuration();</p>
+<pre><code>    FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;),configuration, &quot;itstar&quot;);
+	
+    //2 重命名文件或文件夹
+    fs.rename(new Path(&quot;hdfs://bigdata111:9000/user/itstar/hello.txt&quot;), new Path(&quot;hdfs://bigdata111:9000/user/itstar/hellonihao.txt&quot;));
+fs.close();
+}
+
+````
+</code></pre>
+<h3 id="327-hdfs文件详情查看">3.2.7 HDFS文件详情查看</h3>
+<pre><code> /**
+     * 查看【文件】名称、权限等
+     */
+    @Test
+    public void readListFiles() throws Exception {
+        //1.创建配置对象
+        Configuration conf = new Configuration();
+
+        //2.链接文件系统
+        FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;), conf, &quot;root&quot;);
+
+        //3.迭代器
+//List the statuses and block locations of the files in the given path. If the path is a directory, if recursive is false, returns files in the directory; if recursive is true, return files in the subtree rooted at the path. If the path is a file, return the file's status and block locations.
+
+        RemoteIterator&lt;LocatedFileStatus&gt; listFiles = fs.listFiles(new Path(&quot;/&quot;), true);
+
+        //4.遍历迭代器
+        while (listFiles.hasNext()){
+            //一个一个出
+            LocatedFileStatus fileStatus = listFiles.next();
+
+            //名字
+            System.out.println(&quot;文件名：&quot; + fileStatus.getPath().getName());
+            //块大小
+            System.out.println(&quot;大小：&quot; + fileStatus.getBlockSize());
+            //权限
+            System.out.println(&quot;权限：&quot; + fileStatus.getPermission());
+            System.out.println(fileStatus.getLen());
+
+
+            BlockLocation[] locations = fileStatus.getBlockLocations();
+
+            for (BlockLocation bl:locations){
+                System.out.println(&quot;block-offset:&quot; + bl.getOffset());
+                String[] hosts = bl.getHosts();
+                for (String host:hosts){
+                    System.out.println(host);
+                }
+            }
+
+            System.out.println(&quot;------------------华丽的分割线----------------&quot;);
+        }
+
+</code></pre>
+<h3 id="328-hdfs文件和文件夹判断">3.2.8 HDFS文件和文件夹判断</h3>
+<pre><code>  /**
+     * 判断是否是个文件还是目录，然后打印
+     * @throws Exception
+     */
+    @Test
+    public void judge() throws Exception {
+        //1.创建配置文件信息
+        Configuration conf = new Configuration();
+
+        //2.获取文件系统
+        FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;), conf, &quot;root&quot;);
+
+        //3.遍历所有的文件
+//List the statuses of the files/directories in the given path if the path is a directory.
+   FileStatus[] liststatus = fs.listStatus(new Path(&quot;/&quot;));
+        for(FileStatus status :liststatus)
+        {
+            //判断是否是文件
+            if (status.isFile()){
+                //ctrl + d:复制一行
+                //ctrl + x 是剪切一行，可以用来当作是删除一行
+                System.out.println(&quot;文件:&quot; + status.getPath().getName());
+            } else {
+                System.out.println(&quot;目录:&quot; + status.getPath().getName());
+            }
+        }
+    }
+
+</code></pre>
+<h2 id="33-通过io流操作hdfs">3.3 通过IO流操作HDFS</h2>
+<h3 id="331-hdfs文件上传">3.3.1 HDFS文件上传</h3>
+<pre><code>/**
+   * IO流方式上传
+   *
+   * @throws URISyntaxException
+   * @throws FileNotFoundException
+   * @throws InterruptedException
+   */
+  @Test
+  public void putFileToHDFSIO() throws URISyntaxException, IOException, InterruptedException {
+      //1.创建配置文件信息
+      Configuration conf = new Configuration();
+
+      //2.获取文件系统
+      FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;), conf, &quot;root&quot;);
+
+      //3.创建输入流
+      FileInputStream fis = new FileInputStream(new File(&quot;F:\\date\\Sogou.txt&quot;));
+
+      //4.输出路径
+      //注意：不能/plus  记得后边写个名 比如：/plus/Sogou.txt
+      Path writePath = new Path(&quot;hdfs://bigdata111:9000/plus/Sogou.txt&quot;);
+      FSDataOutputStream fos = fs.create(writePath);
+
+      //5.流对接
+      //InputStream in    输入
+      //OutputStream out  输出
+      //int buffSize      缓冲区
+      //boolean close     是否关闭流
+      try {
+          IOUtils.copyBytes(fis,fos,4 * 1024,false);
+      } catch (IOException e) {
+          e.printStackTrace();
+      }finally {
+          IOUtils.closeStream(fos);
+          IOUtils.closeStream(fis);
+fs.close();
+
+          System.out.println(&quot;上传成功啦&quot;);
+      }
+  }
+
+</code></pre>
+<h3 id="332-hdfs文件下载">3.3.2 HDFS文件下载</h3>
+<pre><code>/**
+    * IO读取HDFS到控制台
+    *
+    * @throws URISyntaxException
+    * @throws IOException
+    * @throws InterruptedException
+    */
+   @Test
+   public void getFileToHDFSIO() throws URISyntaxException, IOException, InterruptedException {
+       //1.创建配置文件信息
+       Configuration conf = new Configuration();
+
+       //2.获取文件系统
+       FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;), conf, &quot;root&quot;);
+
+       //3.读取路径
+       Path readPath = new Path(&quot;hdfs://bigdata111:9000/plus/Sogou.txt&quot;);
+
+       //4.输入
+       FSDataInputStream fis = fs.open(readPath);
+
+       //5.输出到控制台
+       //InputStream in    输入
+       //OutputStream out  输出
+       //int buffSize      缓冲区
+       //boolean close     是否关闭流
+       IOUtils.copyBytes(fis,System.out,4 * 1024 ,true);
+   }
+
+</code></pre>
+<h3 id="333-定位文件读取">3.3.3 定位文件读取</h3>
+<p>1）下载第一块</p>
+<pre><code>/**
+    * IO读取第一块的内容
+    *
+    * @throws Exception
+    */
+   @Test
+   public void  readFlieSeek1() throws Exception {
+       //1.创建配置文件信息
+       Configuration conf = new Configuration();
+
+       //2.获取文件系统
+       FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;), conf, &quot;root&quot;);
+
+       //3.输入
+       Path path = new Path(&quot;hdfs://bigdata111:9000/plus/hadoop-2.7.2.rar&quot;);
+       FSDataInputStream fis = fs.open(path);
+
+       //4.输出
+       FileOutputStream fos = new FileOutputStream(&quot;F:\\date\\readFileSeek\\A1&quot;);
+
+       //5.流对接
+       byte[] buf = new byte[1024];
+       for (int i = 0; i &lt; 128 * 1024; i++) {
+           fis.read(buf);
+           fos.write(buf);
+       }
+
+       //6.关闭流
+       IOUtils.closeStream(fos);
+       IOUtils.closeStream(fis);
+   }
+
+</code></pre>
+<p>2）下载第二块</p>
+<pre><code>/**
+     * IO读取第二块的内容
+     *
+     * @throws Exception
+     */
+    @Test
+    public void readFlieSeek2() throws Exception {
+        //1.创建配置文件信息
+        Configuration conf = new Configuration();
+
+        //2.获取文件系统
+        FileSystem fs = FileSystem.get(new URI(&quot;hdfs://bigdata111:9000&quot;), conf, &quot;root&quot;);
+
+        //3.输入
+        Path path = new Path(&quot;hdfs://bigdata111:9000/plus/hadoop-2.7.2.rar&quot;);
+        FSDataInputStream fis = fs.open(path);
+
+        //4.输出
+        FileOutputStream fos = new FileOutputStream(&quot;F:\\date\\readFileSeek\\A2&quot;);
+
+        //5.定位偏移量/offset/游标/读取进度 (目的：找到第一块的尾巴，第二块的开头)
+        fis.seek(128 * 1024 * 1024);
+
+        //6.流对接
+        IOUtils.copyBytes(fis, fos, 1024);
+
+        //7.关闭流
+        IOUtils.closeStream(fos);
+        IOUtils.closeStream(fis);
+    }
+
+</code></pre>
+<p>3）合并文件</p>
+<p>在window命令窗口中执行</p>
+<p>type A2 &raquo; A1 然后更改后缀为rar即可</p>
 
     </div>
   </article>
@@ -312,14 +688,9 @@
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://brightsails.github.io/2020/02/bigdata3/" title="HDFS概念"><i
+                <a href="https://brightsails.github.io/2020/02/hadoop_error/" title="Hadoop配置错误"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="https://brightsails.github.io/2020/02/bigdata4/"
-                    title="HDFS基本操作"><span>上一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
