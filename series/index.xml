@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Linux_error</title>
+      <link>https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Fri, 06 Mar 2020 23:39:41 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <description>1.ubuntu xrandr显示问题 ​ xrandr no protocol specified ​ 用户问题，使用默认登录用户即可解决。 2.ubuntu 分辨率修改 ​ xrandr -s 1920*1200 全屏 3.ubuntu 配置好后无法ssh登录 修改ssh改配置文件，</description>
+    </item>
+    
+    <item>
       <title>HDFS基本操作</title>
       <link>https://brightsails.github.io/2020/02/bigdata4/</link>
       <pubDate>Fri, 21 Feb 2020 11:58:01 +0800</pubDate>
@@ -56,10 +65,10 @@
     
     <item>
       <title>Makefile设计</title>
-      <link>https://brightsails.github.io/2020/02/linux1/</link>
+      <link>https://brightsails.github.io/2020/02/makefile/</link>
       <pubDate>Wed, 05 Feb 2020 00:38:30 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/linux1/</guid>
+      <guid>https://brightsails.github.io/2020/02/makefile/</guid>
       <description>Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将</description>
     </item>
     

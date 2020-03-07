@@ -3,21 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://brightsails.github.io/categories/bigdata/</loc>
-    <lastmod>2020-02-21T11:58:01+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://brightsails.github.io/</loc>
-    <lastmod>2020-02-21T11:58:01+08:00</lastmod>
+    <lastmod>2020-03-06T23:39:41+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://brightsails.github.io/categories/</loc>
+    <lastmod>2020-03-06T23:39:41+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/categories/error/</loc>
+    <lastmod>2020-03-06T23:39:41+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2020-03-06T23:39:41+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/posts/</loc>
+    <lastmod>2020-03-06T23:39:41+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/categories/bigdata/</loc>
     <lastmod>2020-02-21T11:58:01+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -38,22 +59,8 @@
   </url>
   
   <url>
-    <loc>https://brightsails.github.io/posts/</loc>
-    <lastmod>2020-02-21T11:58:01+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://brightsails.github.io/tags/</loc>
     <lastmod>2020-02-21T11:58:01+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://brightsails.github.io/categories/error/</loc>
-    <lastmod>2020-02-20T23:26:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -108,7 +115,7 @@
   </url>
   
   <url>
-    <loc>https://brightsails.github.io/2020/02/linux1/</loc>
+    <loc>https://brightsails.github.io/2020/02/makefile/</loc>
     <lastmod>2020-02-05T00:38:30+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        BrightSails Blog</title>
+        Makefile设计 - BrightSails Blog
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,25 +23,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将" />
   <meta name="generator" content="Hugo 0.62.2 with theme pure" />
-  <title>BrightSails Blog</title>
+  <title>Makefile设计 - BrightSails Blog</title>
   
-  <link rel="alternate" type="application/rss+xml" href="https://brightsails.github.io/index.xml" title="BrightSails Blog" />
   
   <link rel="stylesheet" href="https://brightsails.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="BrightSails Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://brightsails.github.io/" />
-<meta property="og:updated_time" content="2020-03-06T23:39:41+08:00" />
-<meta itemprop="name" content="BrightSails Blog">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="BrightSails Blog"/>
-<meta name="twitter:description" content=""/>
+  <meta property="og:title" content="Makefile设计" />
+<meta property="og:description" content="Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://brightsails.github.io/2020/02/makefile/" />
+<meta property="article:published_time" content="2020-02-05T00:38:30+08:00" />
+<meta property="article:modified_time" content="2020-02-05T00:38:30+08:00" />
+<meta itemprop="name" content="Makefile设计">
+<meta itemprop="description" content="Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将">
+<meta itemprop="datePublished" content="2020-02-05T00:38:30&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-05T00:38:30&#43;08:00" />
+<meta itemprop="wordCount" content="1470">
+
+
+
+<meta itemprop="keywords" content="Linux," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Makefile设计"/>
+<meta name="twitter:description" content="Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -249,227 +257,20 @@
 
     
     
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
 
-<main class="main" role="main">
-  
-  <div class="content article-list">
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
     
-    
-    
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"
-    >Linux_error</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">1.ubuntu xrandr显示问题 ​ xrandr no protocol specified ​ 用户问题，使用默认登录用户即可解决。 2.ubuntu 分辨率修改 ​ xrandr -s 1920*1200 全屏 3.ubuntu 配置好后无法ssh登录 修改ssh改配置文件，</div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="">
-  <time datetime="2020-03-06 23:39:41 &#43;0800 CST" itemprop="datePublished">2020-03-06</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/error/"> error </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 710字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/02/bigdata4/"
-    >HDFS基本操作</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">3.2 通过API操作HDFS 3.2.1 HDFS获取文件系统 1）详细代码 /** * 打印本地hadoop地址值 * IO的方式写代码 */ @Test public void intiHDFS() throws IOException { //F2 可以快速的定位错</div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/02/bigdata4/" class="">
-  <time datetime="2020-02-21 11:58:01 &#43;0800 CST" itemprop="datePublished">2020-02-21</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/bigdata/"> bigdata </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/hdfs/"> hdfs </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/02/bigdata4/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2261字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/02/hadoop_error/"
-    >Hadoop配置错误</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">1.hadoop fs -put 命令出错 2.hadoop配置错误，需要有JAVA_HOME</div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/02/hadoop_error/" class="">
-  <time datetime="2020-02-20 23:26:22 &#43;0800 CST" itemprop="datePublished">2020-02-20</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/error/"> error </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/02/hadoop_error/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 32字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/02/bigdata3/"
-    >HDFS概念</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">一 HDFS概念 1.1 概念 HDFS，它是一个文件系统，**全称：Hadoop Distributed File System，用于存储文件通过目录树来定位文件；其次，它是分布式的</div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/02/bigdata3/" class="">
-  <time datetime="2020-02-20 20:36:57 &#43;0800 CST" itemprop="datePublished">2020-02-20</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/bigdata/"> bigdata </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/hdfs/"> hdfs </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/02/bigdata3/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2159字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/02/ssh/"
-    >SSH</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">1、ssh SSH 为 Secure Shell 的缩写，SSH 为建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协</div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/02/ssh/" class="">
-  <time datetime="2020-02-20 19:40:14 &#43;0800 CST" itemprop="datePublished">2020-02-20</time>
-</a>
-</span>
-
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/02/ssh/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 700字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2020/02/bigdata2/"
-    >hadoop配置</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">Hadoop的优势 高可靠性： 因为Hadoop假设计算元素和存储会出现故障，因为它维护多个工作数据副本，在出现故障时可以对失败的节点重新分布处</div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/02/bigdata2/" class="">
-  <time datetime="2020-02-19 23:12:39 &#43;0800 CST" itemprop="datePublished">2020-02-19</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/bigdata/"> bigdata </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/hadoop/"> hadoop </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/02/bigdata2/#comments" class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 3317字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 7分 </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
+    <div class="article-header">
+      <h1 itemprop="name">
   <a
     class="article-title"
     href="/2020/02/makefile/"
@@ -477,12 +278,11 @@
   >
 </h1>
 
-      </div>
-      <div class="article-entry text-muted" itemprop="description">Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将</div>
-      <p class="article-meta">
+      <div class="article-meta">
+        
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/02/makefile/" class="">
+<a href="https://brightsails.github.io/2020/02/makefile/" class="article-date">
   <time datetime="2020-02-05 00:38:30 &#43;0800 CST" itemprop="datePublished">2020-02-05</time>
 </a>
 </span>
@@ -495,25 +295,175 @@
     <a class="article-tag-link" href="/tags/linux/"> Linux </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/02/makefile/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/makefile/#comments"
+            class="article-comment-link">评论</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1470字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
-      </p>
-    </article></div>
-  
-<nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-    <ul class="pager pull-left"><li class="next">
-        <a href="/page/2/">
-          <i class="icon icon-angle-right"></i>
-          
-        </a>
-      </li>
-    </ul>
-    <div class="total-article bar-right">
-      Page:1/2
+      </div>
     </div>
-  </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h3 id="linux中makefile设计">Linux中Makefile设计</h3>
+<h4 id="1编译流程">1.编译流程</h4>
+<pre><code>1.预编译
+gcc -E hello.c -o hello.i
+目的：
+	1.展开宏定义
+	2.引入头文件，将.h引入.c
+	
+2.汇编
+gcc -S hello.i -o hello.s
+目的：
+	将C语言转换为汇编代码
+3.编译
+gcc -c hello.s -o hello.o
+4.链接
+gcc -o hello hello.o
+
+	-S 汇编
+	-o 输出
+	-c 编译
+linux对文件后缀没有判断
+</code></pre>
+<p>使用MakeFile命令默认在当前目录下寻找文件名为MakeFile的文件</p>
+<h4 id="2设计makefile">2.设计makefile</h4>
+<h5 id="显示规则">显示规则</h5>
+<pre><code>	//要对生成的目标所添加的依赖
+	格式：
+	target:dep
+		cmd
+	//makefile先检测依赖关系是否存在，若存在则执行代码，否则跳过，查询其他指令是否能达成依赖条件
+	hello.i:hello.c
+	
+</code></pre>
+<h5 id="变量">变量</h5>
+<p>OBJ =
+OBJ :=
+OBJ +=</p>
+<h5 id="头对象">头对象</h5>
+<p>TARGET=要生成的文件名
+调用：
+$(文件名)</p>
+<h5 id="尾对象">尾对象：</h5>
+<p>.PHONY:
+rm -rf $(变量名)
+调用方法： make clean</p>
+<h5 id="通配符">通配符</h5>
+<ul>
+<li>% 任意一个</li>
+<li>？ 所有</li>
+<li>*所有</li>
+<li>$@ 代表目标文件</li>
+<li>$^ 代表依赖文件</li>
+<li>$&lt; 代表第一个依赖文件</li>
+</ul>
+<h5 id="makefile关键字参数自定义变量">Makefile关键字参数(自定义变量)</h5>
+<p>TARGET = 最后要生成的文件名
+INCLUDE= 头文件
+DEFS = 宏定义的参数
+CFLAGES =gg编译参数
+CC=gcc
+LIBS = 库 -l -L
+SRC(wildcard *.c） 查找返回目录下所有.c文件
+OBJ =$(patsubst %.c,%.o $(SRC))</p>
+<h5 id="符号表">符号表</h5>
+<pre><code>1.readelf -h filename查看头
+2.readelf -s filename 查看头文件的符号表
+3.objcopy —only-keep-debug filename filename.symbol.1.0(版本) 剥离出readelf（符号表），原文件不受影响
+4.objcopy strip-debug filename filename.release 剥离符号表
+*（拓展）
+stripe filename.release 剥离符号表（深度清除符号表）
+</code></pre>
+<h4 id="基本编译命令">基本编译命令</h4>
+<p>多数UNIX平台都通过CC调用它们的C编译程序.除标准和CC以外,LINUX和FREEBSD还支持gcc，基本的编译命令有以下几种:</p>
+<pre><code>1. -c 编译产生对象文件(*.obj)而不链接成可执行文件,当编译几个独立的模块,而待以后由链接程序把它们链接在一起时,就可以使用这个选项,如: 
+             $cc -c hello.c ===&gt; hello.o
+             $cc hello.o
+</code></pre>
+<pre><code>2.  -o 允许用户指定输出文件名,如
+    $cc hello.c -o hello.o
+    or
+    $cc hello.c -o hello
+</code></pre>
+<pre><code>3.-g 指明编译程序在编译的输出中应产生调试信息.这个调试信息使源代码和变量名引用在调试程序中或者当程序异常退出后在分析core文件时可被使用.
+   $cc -c -g hello.c
+</code></pre>
+<pre><code>4. -D 允许从编译程序命令行定义宏符号
+	一共有两种情况:一种是用-DMACRO,相当于在程序中使用#define MACRO,另一种是用-DMACRO=A,相当于程序中的#define MACRO A.如对下面这代码:
+#ifdefine DEBUG
+		printf(&quot;debug message\n&quot;);
+#endif
+编译时可加上-DDEBUG=1参数,执行程序则打印出编译信息
+   gcc -o -DDEBUG=1 -DCHANDLKE -DTANZHOU  printf printf.c
+</code></pre>
+<pre><code>5. -I 可指定查找include文件的其他位置.例如,如果有些include文件位于比较特殊的地方,比如/usr/local/include,就可以增加此选项如下:
+$cc -c -I/usr/local/include -I/opt/include hello.c 此时目录搜索会按给出的次序进行.
+</code></pre>
+<pre><code>6. -E 这个选项是相对标准的,它允许修改命令行以使编译程序把预先处理的C文件发到标准输出,而不实际编译代码.
+	在查看C预处理伪指令和C宏时,这是很有用的.可能的编译输出可重新定向到一个文件,然后用编辑程序来分析:
+    $cc -c -E hello.c &gt;cpp.out	此命令使include文件和程序被预先处理并重定向到文cpp.out。以后可以用编辑程序或者分页命令分析这个文件,并确定最终的C语言代码看起来如何.
+</code></pre>
+<pre><code>7.	-o 优化选项,这个选项不是标准的
+  	-O和 -O1指定1级优化
+ 	-O2 指定2级优化
+	-O3 指定3级优化
+	-O0指定不优化
+	$cc -c O3 -O0 hello.c  当出现多个优化时,以最后一个为准!!
+</code></pre>
+<pre><code>8.-Wall  以最高级别使用GNU编译程序,专门用于显示警告用!!
+	$gcc -Wall hello.c
+</code></pre>
+<pre><code>9.-L指定连接库的搜索目录,-l(小写L)指定连接库的名字
+
+	$gcc main.o -L/usr/lib -lqt -lpthread -lrt -o hello
+	
+	上面的命令把目标文件main.o与库qt相连接,连接时会到/usr/lib查找这个库文件.也就是说-L与-l一般要成对出现.
+</code></pre>
+<h4 id="程序去符号表步骤">程序去符号表步骤</h4>
+<pre><code>确认程序是否存在符号表
+	readelf -s test-1
+生成符号表
+	objcopy --only-keep-debug filename filename.symbol
+生成发布程序
+	objcopy --strip-debug filename filename.relase
+使用符号表进行debug
+	gdb -q --symbol=filename.symbol --exec=filename-release 
+symbol-file .filename.symbol
+</code></pre>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://brightsails.github.io/2020/02/linux2/" title="Linux命令"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://brightsails.github.io/2020/02/bigdata2/"
+                    title="hadoop配置"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
 </nav>
 
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -589,6 +539,7 @@
         hasInnerContainers: true,
     });
 </script>
+
 
   </body>
 </html>
