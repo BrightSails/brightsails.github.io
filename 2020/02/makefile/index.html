@@ -164,8 +164,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://brightsails.github.io/categories/bigdata/" class="category-list-link">bigdata</a><span class="category-list-count">4</span></li>
             <li class="category-list-item"><a href="https://brightsails.github.io/categories/error/" class="category-list-link">error</a><span class="category-list-count">2</span></li>
-            <li class="category-list-item"><a href="https://brightsails.github.io/categories/linux/" class="category-list-link">linux</a><span class="category-list-count">2</span></li>
-            <li class="category-list-item"><a href="https://brightsails.github.io/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="category-list-link">环境搭建</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://brightsails.github.io/categories/linux/" class="category-list-link">linux</a><span class="category-list-count">4</span></li>
         </ul>
     </div>
 </div>
@@ -173,6 +172,10 @@
     <h3 class="widget-title"> 标签</h3>
     <div class="widget-body">
         <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://brightsails.github.io/tags/gdb/" class="tag-list-link">gdb</a><span
+                    class="tag-list-count">1</span></li>
             
             
             <li class="tag-list-item"><a href="https://brightsails.github.io/tags/hadoop/" class="tag-list-link">hadoop</a><span
@@ -188,7 +191,7 @@
             
             
             <li class="tag-list-item"><a href="https://brightsails.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="tag-list-link">环境搭建</a><span
-                    class="tag-list-count">1</span></li>
+                    class="tag-list-count">2</span></li>
             
         </ul>
 
@@ -202,6 +205,26 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/" class="title">GDB调试</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-03-08 21:54:57 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/03/gdb%E8%B0%83%E8%AF%95/" class="title">Source安装</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-03-08 21:54:57 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="title">Linux_error</a>
                     </p>
                     <p class="item-date">
@@ -212,7 +235,7 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/02/bigdata4/" class="title">HDFS基本操作</a>
+                        <a href="https://brightsails.github.io/2020/02/hdfs%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="title">HDFS基本操作</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-02-21 11:58:01 &#43;0800 CST" itemprop="datePublished">2020-02-21</time>
@@ -226,26 +249,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-02-20 23:26:22 &#43;0800 CST" itemprop="datePublished">2020-02-20</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/02/bigdata3/" class="title">HDFS概念</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-02-20 20:36:57 &#43;0800 CST" itemprop="datePublished">2020-02-20</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/02/ssh/" class="title">SSH</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-02-20 19:40:14 &#43;0800 CST" itemprop="datePublished">2020-02-20</time>
                     </p>
                 </div>
             </li>
@@ -378,41 +381,42 @@ stripe filename.release 剥离符号表（深度清除符号表）
 <pre><code>1. -c 编译产生对象文件(*.obj)而不链接成可执行文件,当编译几个独立的模块,而待以后由链接程序把它们链接在一起时,就可以使用这个选项,如: 
              $cc -c hello.c ===&gt; hello.o
              $cc hello.o
-</code></pre>
-<pre><code>2.  -o 允许用户指定输出文件名,如
+             
+2.  -o 允许用户指定输出文件名,如
     $cc hello.c -o hello.o
     or
     $cc hello.c -o hello
-</code></pre>
-<pre><code>3.-g 指明编译程序在编译的输出中应产生调试信息.这个调试信息使源代码和变量名引用在调试程序中或者当程序异常退出后在分析core文件时可被使用.
+    
+3.-g 指明编译程序在编译的输出中应产生调试信息.这个调试信息使源代码和变量名引用在调试程序中或者当程序异常退出后在分析core文件时可被使用.
    $cc -c -g hello.c
-</code></pre>
-<pre><code>4. -D 允许从编译程序命令行定义宏符号
+   
+4. -D 允许从编译程序命令行定义宏符号
 	一共有两种情况:一种是用-DMACRO,相当于在程序中使用#define MACRO,另一种是用-DMACRO=A,相当于程序中的#define MACRO A.如对下面这代码:
 #ifdefine DEBUG
 		printf(&quot;debug message\n&quot;);
 #endif
-编译时可加上-DDEBUG=1参数,执行程序则打印出编译信息
-   gcc -o -DDEBUG=1 -DCHANDLKE -DTANZHOU  printf printf.c
-</code></pre>
-<pre><code>5. -I 可指定查找include文件的其他位置.例如,如果有些include文件位于比较特殊的地方,比如/usr/local/include,就可以增加此选项如下:
+	编译时可加上-DDEBUG=1参数,执行程序则打印出编译信息
+    gcc -o -DDEBUG=1 -DCHANDLKE -DTANZHOU  printf printf.c
+   
+5. -I 可指定查找include文件的其他位置.例如,如果有些include文件位于比较特殊的地方,比如/usr/local/include,就可以增加此选项如下:
 $cc -c -I/usr/local/include -I/opt/include hello.c 此时目录搜索会按给出的次序进行.
-</code></pre>
-<pre><code>6. -E 这个选项是相对标准的,它允许修改命令行以使编译程序把预先处理的C文件发到标准输出,而不实际编译代码.
+
+6. -E 这个选项是相对标准的,它允许修改命令行以使编译程序把预先处理的C文件发到标准输出,而不实际编译代码.
 	在查看C预处理伪指令和C宏时,这是很有用的.可能的编译输出可重新定向到一个文件,然后用编辑程序来分析:
-    $cc -c -E hello.c &gt;cpp.out	此命令使include文件和程序被预先处理并重定向到文cpp.out。以后可以用编辑程序或者分页命令分析这个文件,并确定最终的C语言代码看起来如何.
-</code></pre>
-<pre><code>7.	-o 优化选项,这个选项不是标准的
+    $cc -c -E hello.c &gt;cpp.out	此命令使include文件和程序被预先处理并重定向到文cpp.out。
+    以后可以用编辑程序或者分页命令分析这个文件,并确定最终的C语言代码看起来如何.
+    
+7.	-o 优化选项,这个选项不是标准的
   	-O和 -O1指定1级优化
  	-O2 指定2级优化
 	-O3 指定3级优化
 	-O0指定不优化
 	$cc -c O3 -O0 hello.c  当出现多个优化时,以最后一个为准!!
-</code></pre>
-<pre><code>8.-Wall  以最高级别使用GNU编译程序,专门用于显示警告用!!
+	
+8.-Wall  以最高级别使用GNU编译程序,专门用于显示警告用!!
 	$gcc -Wall hello.c
-</code></pre>
-<pre><code>9.-L指定连接库的搜索目录,-l(小写L)指定连接库的名字
+	
+9.-L指定连接库的搜索目录,-l(小写L)指定连接库的名字
 
 	$gcc main.o -L/usr/lib -lqt -lpthread -lrt -o hello
 	
@@ -439,12 +443,12 @@ symbol-file .filename.symbol
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://brightsails.github.io/2020/02/linux2/" title="Linux命令"><i
+                <a href="https://brightsails.github.io/2020/02/linux%E5%91%BD%E4%BB%A4/" title="Linux命令"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
             </li>
             <li class="next">
-                <a href="https://brightsails.github.io/2020/02/bigdata2/"
+                <a href="https://brightsails.github.io/2020/02/hadoop%E9%85%8D%E7%BD%AE/"
                     title="hadoop配置"><span>上一篇&nbsp;&nbsp;</span><i
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>

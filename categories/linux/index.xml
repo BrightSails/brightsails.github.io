@@ -5,10 +5,28 @@
     <link>https://brightsails.github.io/categories/linux/</link>
     <description>Recent content in Linux on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Feb 2020 00:38:30 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 21:54:57 +0800</lastBuildDate>
     
         <atom:link href="https://brightsails.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GDB调试</title>
+      <link>https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sun, 08 Mar 2020 21:54:57 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/</guid>
+      <description>Source insight安装 1.安装并配置 文件准备： mycomment.em 做注释 openfloder.em 快速打开目标目录 quicker.em 快捷键集合 操作： 1.环境准备以及破解 将sourceinsight4以</description>
+    </item>
+    
+    <item>
+      <title>Source安装</title>
+      <link>https://brightsails.github.io/2020/03/gdb%E8%B0%83%E8%AF%95/</link>
+      <pubDate>Sun, 08 Mar 2020 21:54:57 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/03/gdb%E8%B0%83%E8%AF%95/</guid>
+      <description>Source insight安装 1.安装并配置 文件准备： mycomment.em 做注释 openfloder.em 快速打开目标目录 quicker.em 快捷键集合 操作： 1.环境准备以及破解 将sourceinsight4以</description>
+    </item>
     
     <item>
       <title>Linux_error</title>
@@ -21,10 +39,10 @@
     
     <item>
       <title>HDFS基本操作</title>
-      <link>https://brightsails.github.io/2020/02/bigdata4/</link>
+      <link>https://brightsails.github.io/2020/02/hdfs%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Fri, 21 Feb 2020 11:58:01 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/bigdata4/</guid>
+      <guid>https://brightsails.github.io/2020/02/hdfs%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
       <description>3.2 通过API操作HDFS 3.2.1 HDFS获取文件系统 1）详细代码 /** * 打印本地hadoop地址值 * IO的方式写代码 */ @Test public void intiHDFS() throws IOException { //F2 可以快速的定位错</description>
     </item>
     
@@ -39,10 +57,10 @@
     
     <item>
       <title>HDFS概念</title>
-      <link>https://brightsails.github.io/2020/02/bigdata3/</link>
+      <link>https://brightsails.github.io/2020/02/hdfs%E6%A6%82%E5%BF%B5/</link>
       <pubDate>Thu, 20 Feb 2020 20:36:57 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/bigdata3/</guid>
+      <guid>https://brightsails.github.io/2020/02/hdfs%E6%A6%82%E5%BF%B5/</guid>
       <description>一 HDFS概念 1.1 概念 HDFS，它是一个文件系统，**全称：Hadoop Distributed File System，用于存储文件通过目录树来定位文件；其次，它是分布式的</description>
     </item>
     
@@ -57,11 +75,11 @@
     
     <item>
       <title>hadoop配置</title>
-      <link>https://brightsails.github.io/2020/02/bigdata2/</link>
+      <link>https://brightsails.github.io/2020/02/hadoop%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 19 Feb 2020 23:12:39 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/bigdata2/</guid>
-      <description>Hadoop的优势 高可靠性： 因为Hadoop假设计算元素和存储会出现故障，因为它维护多个工作数据副本，在出现故障时可以对失败的节点重新分布处</description>
+      <guid>https://brightsails.github.io/2020/02/hadoop%E9%85%8D%E7%BD%AE/</guid>
+      <description>大数据的特征 容量（Volume）：数据的大小决定所考虑的数据的价值和潜在的信息； 种类（Variety）：数据类型的多样性； 速度（Veloci</description>
     </item>
     
     <item>
@@ -75,20 +93,20 @@
     
     <item>
       <title>Linux命令</title>
-      <link>https://brightsails.github.io/2020/02/linux2/</link>
+      <link>https://brightsails.github.io/2020/02/linux%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Tue, 04 Feb 2020 00:07:52 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/linux2/</guid>
+      <guid>https://brightsails.github.io/2020/02/linux%E5%91%BD%E4%BB%A4/</guid>
       <description>linux文件权限管理 共10位 r 读 w 写 x 执行 第1位为：d目录 -文件 l软连接代码 第2-5位为：文件所属者权限 第5-8位为：所属组 第8-10位为</description>
     </item>
     
     <item>
       <title>linux网络配置</title>
-      <link>https://brightsails.github.io/2020/01/bigdata1/</link>
+      <link>https://brightsails.github.io/2020/01/linux%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 31 Jan 2020 14:13:45 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/01/bigdata1/</guid>
-      <description>大数据的特征 容量（Volume）：数据的大小决定所考虑的数据的价值和潜在的信息； 种类（Variety）：数据类型的多样性； 速度（Veloci</description>
+      <guid>https://brightsails.github.io/2020/01/linux%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</guid>
+      <description>配置linux ip linux下查看ip指令： ip addr 配置ip： 1.进入 cd etc/sysconfig/network-scripts 2.打开文件 vi ifcfg-ens33 3.编辑文件 4.重新启动 service network restart vmware及本地配置</description>
     </item>
     
     <item>
