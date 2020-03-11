@@ -3,22 +3,71 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://brightsails.github.io/categories/bigdata/</loc>
+    <lastmod>2020-03-11T12:22:24+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://brightsails.github.io/</loc>
-    <lastmod>2020-03-08T21:54:57+08:00</lastmod>
+    <lastmod>2020-03-11T12:22:24+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://brightsails.github.io/categories/</loc>
-    <lastmod>2020-03-08T21:54:57+08:00</lastmod>
+    <lastmod>2020-03-11T12:22:24+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/tags/hdfs/</loc>
+    <lastmod>2020-03-11T12:22:24+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/2020/03/hdfsmethod/</loc>
+    <lastmod>2020-03-11T12:22:24+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/posts/</loc>
+    <lastmod>2020-03-11T12:22:24+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/tags/</loc>
+    <lastmod>2020-03-11T12:22:24+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://brightsails.github.io/tags/gdb/</loc>
-    <lastmod>2020-03-08T21:54:57+08:00</lastmod>
+    <lastmod>2020-03-08T22:30:01+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/2020/03/gdb%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2020-03-08T22:30:01+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/categories/linux/</loc>
+    <lastmod>2020-03-08T22:30:01+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -31,28 +80,7 @@
   </url>
   
   <url>
-    <loc>https://brightsails.github.io/categories/linux/</loc>
-    <lastmod>2020-03-08T21:54:57+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://brightsails.github.io/posts/</loc>
-    <lastmod>2020-03-08T21:54:57+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://brightsails.github.io/2020/03/gdb%E8%B0%83%E8%AF%95/</loc>
-    <lastmod>2020-03-08T21:54:57+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://brightsails.github.io/tags/</loc>
+    <loc>https://brightsails.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-03-08T21:54:57+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -68,20 +96,6 @@
   <url>
     <loc>https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</loc>
     <lastmod>2020-03-06T23:39:41+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://brightsails.github.io/categories/bigdata/</loc>
-    <lastmod>2020-02-21T11:58:01+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://brightsails.github.io/tags/hdfs/</loc>
-    <lastmod>2020-02-21T11:58:01+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -129,7 +143,7 @@
   </url>
   
   <url>
-    <loc>https://brightsails.github.io/tags/linux/</loc>
+    <loc>https://brightsails.github.io/tags/makefile/</loc>
     <lastmod>2020-02-05T00:38:30+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -143,6 +157,13 @@
   </url>
   
   <url>
+    <loc>https://brightsails.github.io/tags/linux/</loc>
+    <lastmod>2020-02-04T00:07:52+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://brightsails.github.io/2020/02/linux%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2020-02-04T00:07:52+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -151,13 +172,6 @@
   
   <url>
     <loc>https://brightsails.github.io/2020/01/linux%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2020-01-31T14:13:45+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://brightsails.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-01-31T14:13:45+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

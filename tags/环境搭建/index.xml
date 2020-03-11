@@ -5,26 +5,35 @@
     <link>https://brightsails.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
     <description>Recent content in 环境搭建 on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 31 Jan 2020 14:13:45 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 21:54:57 +0800</lastBuildDate>
     
         <atom:link href="https://brightsails.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>GDB调试</title>
-      <link>https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Sun, 08 Mar 2020 21:54:57 +0800</pubDate>
+      <title>HdfsMethod</title>
+      <link>https://brightsails.github.io/2020/03/hdfsmethod/</link>
+      <pubDate>Wed, 11 Mar 2020 12:22:24 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/</guid>
-      <description>Source insight安装 1.安装并配置 文件准备： mycomment.em 做注释 openfloder.em 快速打开目标目录 quicker.em 快捷键集合 操作： 1.环境准备以及破解 将sourceinsight4以</description>
+      <guid>https://brightsails.github.io/2020/03/hdfsmethod/</guid>
+      <description>3.2 通过API操作HDFS package HdfsAPI; import org.apache.hadoop.conf.Configuration; import org.apache.hadoop.fs.*; import org.apache.hadoop.io.IOUtils; import org.junit.After; import org.junit.Before; import org.junit.Test; import java.io.*; import java.net.URI; import java.net.URISyntaxException; import static org.apache.hadoop.fs.FileSystem.*; public class HdfsAPI { //实例化hadoop配置文件 //后推前 ctrl+alt+v //去除多余的包 ctrl+calt+o /</description>
+    </item>
+    
+    <item>
+      <title>GDB调试基础命令</title>
+      <link>https://brightsails.github.io/2020/03/gdb%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sun, 08 Mar 2020 22:30:01 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/03/gdb%E5%AE%89%E8%A3%85/</guid>
+      <description>GDB安装 apt-get install gdb //安装gef 插件 wget -q -O- https://github.com/hugsy/gef/raw/master/gef.sh | sh wget -q -O ~/.gdbinit-gef.py https://github.com/hugsy/gef/raw/master/gef.py echo source ~/.gdbinit-gef.py &amp;gt; ~/.gdbinit GDB调试 1.基于源码的调试 基础知识 RIP 执行指针 ESP 栈顶指针 EAX当前栈指针位</description>
     </item>
     
     <item>
       <title>Source安装</title>
-      <link>https://brightsails.github.io/2020/03/gdb%E8%B0%83%E8%AF%95/</link>
+      <link>https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/</link>
       <pubDate>Sun, 08 Mar 2020 21:54:57 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/03/gdb%E8%B0%83%E8%AF%95/</guid>
+      <guid>https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/</guid>
       <description>Source insight安装 1.安装并配置 文件准备： mycomment.em 做注释 openfloder.em 快速打开目标目录 quicker.em 快捷键集合 操作： 1.环境准备以及破解 将sourceinsight4以</description>
     </item>
     
