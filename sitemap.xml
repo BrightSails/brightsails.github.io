@@ -3,14 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://brightsails.github.io/categories/bigdata/</loc>
+    <loc>https://brightsails.github.io/</loc>
+    <lastmod>2020-04-21T18:55:21+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/posts/</loc>
+    <lastmod>2020-04-21T18:55:21+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/2020/04/vscode_config/</loc>
+    <lastmod>2020-04-21T18:55:21+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/2020/04/erjizhizhen/</loc>
+    <lastmod>2020-04-20T23:40:14+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/2020/03/hdfsmethod/</loc>
     <lastmod>2020-03-11T12:22:24+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://brightsails.github.io/</loc>
+    <loc>https://brightsails.github.io/categories/bigdata/</loc>
     <lastmod>2020-03-11T12:22:24+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -31,20 +59,6 @@
   </url>
   
   <url>
-    <loc>https://brightsails.github.io/2020/03/hdfsmethod/</loc>
-    <lastmod>2020-03-11T12:22:24+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://brightsails.github.io/posts/</loc>
-    <lastmod>2020-03-11T12:22:24+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://brightsails.github.io/tags/</loc>
     <lastmod>2020-03-11T12:22:24+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -59,7 +73,7 @@
   </url>
   
   <url>
-    <loc>https://brightsails.github.io/2020/03/gdb%E5%AE%89%E8%A3%85/</loc>
+    <loc>https://brightsails.github.io/2020/03/gdb/</loc>
     <lastmod>2020-03-08T22:30:01+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -180,6 +194,12 @@
   <url>
     <loc>https://brightsails.github.io/2020/01/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-01-19T23:06:02+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/1/01/linux-share-files/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

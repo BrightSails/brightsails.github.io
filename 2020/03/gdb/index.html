@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Linux_error - BrightSails Blog
+        GDB基础 - BrightSails Blog
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,32 +23,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="1.ubuntu xrandr显示问题 ​ xrandr no protocol specified ​ 用户问题，使用默认登录用户即可解决。 2.ubuntu 分辨率修改 ​ xrandr -s 1920*1200 全屏 3.ubuntu 配置好后无法ssh登录 修改ssh改配置文件，" />
+  <meta name="description" content="GDB安装 apt-get install gdb //安装gef 插件 wget -q -O- https://github.com/hugsy/gef/raw/master/gef.sh | sh wget -q -O ~/.gdbinit-gef.py https://github.com/hugsy/gef/raw/master/gef.py echo source ~/.gdbinit-gef.py &amp;gt; ~/.gdbinit 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功" />
   <meta name="generator" content="Hugo 0.62.2 with theme pure" />
-  <title>Linux_error - BrightSails Blog</title>
+  <title>GDB基础 - BrightSails Blog</title>
   
   
   <link rel="stylesheet" href="https://brightsails.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="Linux_error" />
-<meta property="og:description" content="1.ubuntu xrandr显示问题 ​ xrandr no protocol specified ​ 用户问题，使用默认登录用户即可解决。 2.ubuntu 分辨率修改 ​ xrandr -s 1920*1200 全屏 3.ubuntu 配置好后无法ssh登录 修改ssh改配置文件，" />
+  <meta property="og:title" content="GDB基础" />
+<meta property="og:description" content="GDB安装 apt-get install gdb //安装gef 插件 wget -q -O- https://github.com/hugsy/gef/raw/master/gef.sh | sh wget -q -O ~/.gdbinit-gef.py https://github.com/hugsy/gef/raw/master/gef.py echo source ~/.gdbinit-gef.py &gt; ~/.gdbinit 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" />
-<meta property="article:published_time" content="2020-03-06T23:39:41+08:00" />
-<meta property="article:modified_time" content="2020-03-06T23:39:41+08:00" />
-<meta itemprop="name" content="Linux_error">
-<meta itemprop="description" content="1.ubuntu xrandr显示问题 ​ xrandr no protocol specified ​ 用户问题，使用默认登录用户即可解决。 2.ubuntu 分辨率修改 ​ xrandr -s 1920*1200 全屏 3.ubuntu 配置好后无法ssh登录 修改ssh改配置文件，">
-<meta itemprop="datePublished" content="2020-03-06T23:39:41&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-06T23:39:41&#43;08:00" />
-<meta itemprop="wordCount" content="710">
+<meta property="og:url" content="https://brightsails.github.io/2020/03/gdb/" />
+<meta property="article:published_time" content="2020-03-08T22:30:01+08:00" />
+<meta property="article:modified_time" content="2020-03-08T22:30:01+08:00" />
+<meta itemprop="name" content="GDB基础">
+<meta itemprop="description" content="GDB安装 apt-get install gdb //安装gef 插件 wget -q -O- https://github.com/hugsy/gef/raw/master/gef.sh | sh wget -q -O ~/.gdbinit-gef.py https://github.com/hugsy/gef/raw/master/gef.py echo source ~/.gdbinit-gef.py &gt; ~/.gdbinit 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功">
+<meta itemprop="datePublished" content="2020-03-08T22:30:01&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-08T22:30:01&#43;08:00" />
+<meta itemprop="wordCount" content="703">
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linux_error"/>
-<meta name="twitter:description" content="1.ubuntu xrandr显示问题 ​ xrandr no protocol specified ​ 用户问题，使用默认登录用户即可解决。 2.ubuntu 分辨率修改 ​ xrandr -s 1920*1200 全屏 3.ubuntu 配置好后无法ssh登录 修改ssh改配置文件，"/>
+<meta itemprop="keywords" content="GDB," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GDB基础"/>
+<meta name="twitter:description" content="GDB安装 apt-get install gdb //安装gef 插件 wget -q -O- https://github.com/hugsy/gef/raw/master/gef.sh | sh wget -q -O ~/.gdbinit-gef.py https://github.com/hugsy/gef/raw/master/gef.py echo source ~/.gdbinit-gef.py &gt; ~/.gdbinit 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -280,8 +280,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"
-    >Linux_error</a
+    href="/2020/03/gdb/"
+    >GDB基础</a
   >
 </h1>
 
@@ -289,59 +289,158 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="article-date">
-  <time datetime="2020-03-06 23:39:41 &#43;0800 CST" itemprop="datePublished">2020-03-06</time>
+<a href="https://brightsails.github.io/2020/03/gdb/" class="article-date">
+  <time datetime="2020-03-08 22:30:01 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/error/"> error </a>
-</span>
+  <a class="article-category-link" href="/categories/linux/"> Linux </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/gdb/"> GDB </a>
+  </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/03/gdb/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 710字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 703字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h4 id="1ubuntu--xrandr显示问题">1.ubuntu  xrandr显示问题</h4>
-<p>​		xrandr no protocol specified</p>
-<p>​		用户问题，使用默认登录用户即可解决。</p>
-<h4 id="2ubuntu-分辨率修改">2.ubuntu 分辨率修改</h4>
-<p>​		xrandr -s 1920*1200 全屏</p>
-<h4 id="3ubuntu-配置好后无法ssh登录">3.ubuntu 配置好后无法ssh登录</h4>
-<pre><code>修改ssh改配置文件，设置为允许root远程登录：
-
-root@ubuntu:~# vim /etc/ssh/sshd_config
-
-将PermitRootLogin prohibie-password 修改为：PermitRootLogin yes 即可
-
-保存退出，重启ssh服务：
-
-root@ubuntu:~# /etc/init.d/ssh restart
-
-再次尝试ssh 远程登录，成功登录
+      <h3 id="gdb安装">GDB安装</h3>
+<pre><code>apt-get install gdb 
+//安装gef 插件
+wget -q -O- https://github.com/hugsy/gef/raw/master/gef.sh | sh
+wget -q -O ~/.gdbinit-gef.py https://github.com/hugsy/gef/raw/master/gef.py
+echo source ~/.gdbinit-gef.py &gt; ~/.gdbinit
 </code></pre>
-<h4 id="4安装termcap">4.安装termcap</h4>
-<p>termcap是一个终端数据库，termcap不需要交叉编译，在Ubuntu下直接编译即可，我的做法是：
-首先在网上从各种垃圾下载中找到了一个真正能用的termcap 安装包，链接为点击打开链接</p>
-<p>然后将该文件直接解压出来， 执行配置脚本</p>
-<pre><code> ./configure --target=arm-none-linux-gnueabi --prefix=/opt/termcap
+<h2 id="安装gdb增强工具-gef">安装GDB增强工具 (gef)</h2>
+<ul>
+<li>GDB的版本大于7.7</li>
+<li>wget -q -O- <a href="https://github.com/hugsy/gef/raw/master/scripts/gef.sh">https://github.com/hugsy/gef/raw/master/scripts/gef.sh</a> | sh</li>
+<li>确保网络连通 并且成功更新ubuntu (更新source.list 使用apt-get update)</li>
+</ul>
+<h4 id="gdb启动方式">GDB启动方式</h4>
+<ul>
+<li>gdb 文件名</li>
+<li>gdb 文件名 core（错误文件日志）</li>
+<li>set args -c 0 -i 123456</li>
+</ul>
+<pre><code>readelf -h查看文件头 其中的entry point address为程序起始地址
 </code></pre>
-<p>然后执行make和make install安装即可。让我很折腾的是网上说该文件要放在交叉编译工具链的文件夹下，其实不对，只要将/opt/termcap/include/termcap.h复制到/usr/include文件夹下，将/opt/termcap/lib/libtermcap.a复制到/usr/lib目录下即可**(也可添加和环境变量)**</p>
-<p>然后重新执行build-all就安装完了，文件安装到了/opt/arm-linux-gdb下，我测试了一下是正确的。</p>
-<p>最后，配置环境变量，为了更方便的调用，这里将arm-linux-gdb设置到PATH环境变量中，方法是</p>
-<pre><code>root权限下执行gedit /etc/bash.bashrc/，然后在文件的末尾加上下面这行代码
-
-
-export PATH=$PATH:/opt/arm-linux-gdb/bin
-export PATH=$PATH:/opt/FriendlyARM/toolschain/4.4.3/bin
+<h3 id="gdb调试">GDB调试</h3>
+<h4 id="1基于源码的调试">1.基于源码的调试</h4>
+<h5 id="基础知识">基础知识</h5>
+<ul>
+<li>RIP 执行指针</li>
+<li>ESP 栈顶指针</li>
+<li>EAX当前栈指针位置</li>
+<li>EBP基址指针</li>
+</ul>
+<h5 id="基础指令">基础指令：</h5>
+<ul>
+<li>
+<p>vmmap 程序中关键地址段</p>
+</li>
+<li>
+<p>nexti 汇编下一行</p>
+</li>
+<li>
+<p>n 下一行</p>
+</li>
+<li>
+<p>u 跳出循环</p>
+<pre><code>p/x变量名 查看地址
+p/d 以十进制打印值
+p *变量 查看结构体，地址
+p *(db_list_t * )变量名 
+p &amp;变量名 查看该变量地址
+p 变量名=x 直接复制
 </code></pre>
-<p>注意，这里如果有arm-linux-gcc的设置，一定要将arm-linux-gdb的放在上面，因为有些gcc中自带gdb，如果反过来就不能使用我们安装的了。
-最后执行下面的命令</p>
-<pre><code>source /etc/bash.bashrc
+</li>
+<li>
+<p>s 进入函数内</p>
+</li>
+<li>
+<p>b 行数 跳转</p>
+</li>
+<li>
+<p>b 函数名 跳转</p>
+</li>
+<li>
+<p>set args 参数&hellip; 设置参数</p>
+</li>
+<li>
+<p>l main 查看main函数</p>
+</li>
+<li>
+<p>break （b） 函数名，行号     打断点</p>
+</li>
+<li>
+<p>shell 跳转至shell</p>
+</li>
+<li>
+<p>exit 退出shell</p>
+</li>
+<li>
+<p>r 运行</p>
+</li>
+<li>
+<p>x/20wx（32位，gz为64位）查看20个16 进制的字节</p>
+<pre><code>x/s 以字符串方式查看
+x/sa 变量名 查看字符串 
+s为字长 b 比特  w 4字节 g 8字节  
+a为进制  d是十进制  f,z十六进制  x八进制
 </code></pre>
+</li>
+<li>
+<p>i r查看所有的寄存器的值</p>
+</li>
+<li>
+<p>bt 查看进入的函数的调用关系</p>
+</li>
+<li>
+<p>info frame 0 查看当前函数调用栈</p>
+</li>
+<li>
+<p>x/i 查看二进制代码</p>
+</li>
+<li>
+<p>l 名字 查看具体代码</p>
+</li>
+<li>
+<p>c 跳至下一断点</p>
+</li>
+<li>
+<p>b 变量 if 条件   条件断点</p>
+</li>
+</ul>
+<h4 id="条件断点">条件断点</h4>
+<p>若在for中循环100次，需要在第50次循环停下来</p>
+<p>b 行号 if （i==50）</p>
+<h4 id="多进程">多进程</h4>
+<p>follow-fork-mode 设置进程模式</p>
+<p>detach-on-fork 是否只调试子进程</p>
+<h4 id="防破解的保护机制">防破解的保护机制</h4>
+<ul>
+<li>
+<p>ASLR与PIE ASLP为系统层面，ASPR为指令地址随机化（不开启偏移地址是固定的），PIE是在GCC编译时自行决定是否开启</p>
+</li>
+<li>
+<p>Canary 栈保护机制，在函数返回时校验cookie，从而判断是否栈溢出</p>
+</li>
+<li>
+<p>NX 栈不可执行</p>
+</li>
+<li>
+<p>RELRO</p>
+</li>
+<li>
+<p>加壳</p>
+</li>
+</ul>
 
     </div>
   </article>
@@ -352,13 +451,13 @@ export PATH=$PATH:/opt/FriendlyARM/toolschain/4.4.3/bin
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://brightsails.github.io/2020/02/hdfs%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" title="HDFS基本操作"><i
+                <a href="https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/" title="Source安装"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
             </li>
             <li class="next">
-                <a href="https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/"
-                    title="Source安装"><span>上一篇&nbsp;&nbsp;</span><i
+                <a href="https://brightsails.github.io/2020/03/hdfsmethod/"
+                    title="API操作HDFS"><span>上一篇&nbsp;&nbsp;</span><i
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             

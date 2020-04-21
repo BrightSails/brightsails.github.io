@@ -42,7 +42,7 @@
 <meta itemprop="description" content="Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将">
 <meta itemprop="datePublished" content="2020-02-05T00:38:30&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-05T00:38:30&#43;08:00" />
-<meta itemprop="wordCount" content="1470">
+<meta itemprop="wordCount" content="2874">
 
 
 
@@ -209,7 +209,27 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/03/hdfsmethod/" class="title">HdfsMethod</a>
+                        <a href="https://brightsails.github.io/2020/04/vscode_config/" class="title">Vscode_config</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-21 18:55:21 &#43;0800 CST" itemprop="datePublished">2020-04-21</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/04/erjizhizhen/" class="title">二级指针</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-20 23:40:14 &#43;0800 CST" itemprop="datePublished">2020-04-20</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/03/hdfsmethod/" class="title">API操作HDFS</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-03-11 12:22:24 &#43;0800 CST" itemprop="datePublished">2020-03-11</time>
@@ -219,7 +239,7 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/03/gdb%E5%AE%89%E8%A3%85/" class="title">GDB调试基础命令</a>
+                        <a href="https://brightsails.github.io/2020/03/gdb/" class="title">GDB基础</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-03-08 22:30:01 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
@@ -233,26 +253,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-03-08 21:54:57 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="title">Linux_error</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-03-06 23:39:41 &#43;0800 CST" itemprop="datePublished">2020-03-06</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/02/hdfs%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="title">HDFS基本操作</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-02-21 11:58:01 &#43;0800 CST" itemprop="datePublished">2020-02-21</time>
                     </p>
                 </div>
             </li>
@@ -304,8 +304,8 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/makefile/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1470字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2874字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 6分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
@@ -372,6 +372,8 @@ CC=gcc
 LIBS = 库 -l -L
 SRC(wildcard *.c） 查找返回目录下所有.c文件
 OBJ =$(patsubst %.c,%.o $(SRC))</p>
+<pre><code>patsubst 函数是将SRC列表中的.c文件转换为.o存进obj，对文件没有任何影响。
+</code></pre>
 <h5 id="符号表">符号表</h5>
 <pre><code>1.readelf -h filename查看头
 2.readelf -s filename 查看头文件的符号表
@@ -437,6 +439,80 @@ $cc -c -I/usr/local/include -I/opt/include hello.c 此时目录搜索会按给�
 	gdb -q --symbol=filename.symbol --exec=filename-release 
 symbol-file .filename.symbol
 </code></pre>
+<h4 id="patsubst-函数">patsubst 函数</h4>
+<p>1、wildcard : 扩展通配符</p>
+<p>2、notdir ： 去除路径</p>
+<p>3、patsubst ：替换通配符</p>
+<p>例子：
+建立一个测试目录，在测试目录下建立一个名为sub的子目录
+$ mkdir test
+$ cd test
+$ mkdir sub</p>
+<p>在test下，建立a.c和b.c2个文件，在sub目录下，建立sa.c和sb.c2 个文件</p>
+<p>建立一个简单的Makefile
+src=$(wildcard <em>.c ./sub/</em>.c)
+dir=$(notdir $(src))
+obj=$(patsubst %.c,%.o,$(dir) )</p>
+<p>all:
+@echo $(src)
+@echo $(dir)
+@echo $(obj)
+@echo &ldquo;end&rdquo;</p>
+<p>执行结果分析：
+第一行输出：
+a.c b.c ./sub/sa.c ./sub/sb.c</p>
+<p>wildcard把 指定目录 ./ 和 ./sub/ 下的所有后缀是c的文件全部展开。</p>
+<p>第二行输出：
+a.c b.c sa.c sb.c
+notdir把展开的文件去除掉路径信息</p>
+<p>第三行输出：
+a.o b.o sa.o sb.o</p>
+<p>在$(patsubst %.c,%.o,$(dir) )中，patsubst把$(dir)中的变量符合后缀是.c的全部替换成.o，
+任何输出。
+或者可以使用
+obj=$(dir:%.c=%.o)
+效果也是一样的。</p>
+<p>这里用到makefile里的替换引用规则，即用您指定的变量替换另一个变量。
+它的标准格式是
+$(var:a=b) 或 ${var:a=b}
+它的含义是把变量var中的每一个值结尾用b替换掉a</p>
+<p>今天在研究makefile时在网上看到一篇文章，介绍了使用函数wildcard得到指定目录下所有的C语言源程序文件名的方法，这下好了，不用手工一个一个指定需要编译的.c文件了，方法如下：</p>
+<p>SRC = $(wildcard *.c)</p>
+<p>等于指定编译当前目录下所有.c文件，如果还有子目录，比如子目录为inc，则再增加一个wildcard函数，象这样：</p>
+<p>SRC = $(wildcard <em>.c) $(wildcard inc/</em>.c)</p>
+<p>也可以指定汇编源程序：
+ASRC = $(wildcard *.S)</p>
+<p>这样一来，makefile模板可修改的基本就是AVR名称和时钟频率了，其它的一般不用动了。</p>
+<p>PS：针对patsubst我们来好好聊一聊</p>
+<p>这是个模式替换函数</p>
+<p>格式：$(patsubst <!-- raw HTML omitted -->,<!-- raw HTML omitted -->,<!-- raw HTML omitted --> )
+名称：模式字符串替换函数——patsubst。
+功能：查找<!-- raw HTML omitted -->中的单词（单词以“空格”、“Tab”或“回车”“换行”分隔）是否符合模式<!-- raw HTML omitted -->，如果匹配的话，则以<!-- raw HTML omitted -->替换。这里，<!-- raw HTML omitted -->可以包括通配符“%”，表示任意长度的字串。如果<!-- raw HTML omitted -->中也包含“%”，那么，<!-- raw HTML omitted -->中的这个“%”将是<!-- raw HTML omitted -->中的那个“%”所代表的字串。（可以用“\”来转义，以“%”来表示真实含义的“%”字符）
+返回：函数返回被替换过后的字符串。</p>
+<p>示例：</p>
+<p>$(patsubst %.c,%.o,x.c.c bar.c)</p>
+<p>把字串“x.c.c bar.c”符合模式[%.c]的单词替换成[%.o]，返回结果是“x.c.o bar.o”</p>
+<p>make中有个变量替换引用</p>
+<p>对于一个已经定义的变量，可以使用“替换引用”将其值中的后缀字符（串）使用指定的字符（字符串）替换。格式为“$(VAR:A=B)”（或者“${VAR:A=B}”），意思是，替换变量“VAR”中所有“A”字符结尾的字为“B”结尾的字。“结尾”的含义是空格之前（变量值多个字之间使用空格分开）。而对于变量其它部分的“A”字符不进行替换。例如：</p>
+<p><em>foo := a.o b.o c.o</em></p>
+<p><em>bar := $(foo:.o=.c)</em></p>
+<p>在这个定义中，变量“bar”的值就为“a.c b.c c.c”。使用变量的替换引用将变量“foo”以空格分开的值中的所有的字的尾字符“o”替换为“c”，其他部分不变。如果在变量“foo”中如果存在“o.o”时，那么变量“bar”的值为“a.c b.c c.c o.c”而不是“a.c b.c c.c c.c”。</p>
+<p>它是patsubst的一个简化，那么到底是简化成了什么样子呢</p>
+<p>CROSS=</p>
+<p>CC=$(CROSS)gcc</p>
+<p>CFLAGS= -Wall</p>
+<p>LDFLAGS=</p>
+<p>PKG = src</p>
+<p>SRCS = $(wildcard $(PKG)/inc/<em>.c) $(wildcard $(PKG)/</em>.c)</p>
+<p>BOJS = $(patsubst %.c,%.o,$(SRCS))</p>
+<p>#BOJS = $(SRCS: .c = .o)</p>
+<p>#%.o:%.c</p>
+<p># $(CC) -c $&lt; $(CFLAGS) -o $@</p>
+<p>.PHONY:main</p>
+<p>main:$(BOJS)</p>
+<p>-$(CC) -o $@ $(CFLAGS) $^ $(LDFLAGS)</p>
+<p>-mv main ./myfile</p>
+<p>起初使用的是变量替换引用的方式，但是却始终不生成中间的.o文件，但是使用patsubst后，一切正常了，如果你知道为什么，请留言告诉我吧</p>
 
     </div>
   </article>

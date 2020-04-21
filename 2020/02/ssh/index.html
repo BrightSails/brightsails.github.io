@@ -42,7 +42,7 @@
 <meta itemprop="description" content="1、ssh SSH 为 Secure Shell 的缩写，SSH 为建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协">
 <meta itemprop="datePublished" content="2020-02-20T19:40:14&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-20T19:40:14&#43;08:00" />
-<meta itemprop="wordCount" content="1288">
+<meta itemprop="wordCount" content="1300">
 
 
 
@@ -209,7 +209,27 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/03/hdfsmethod/" class="title">HdfsMethod</a>
+                        <a href="https://brightsails.github.io/2020/04/vscode_config/" class="title">Vscode_config</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-21 18:55:21 &#43;0800 CST" itemprop="datePublished">2020-04-21</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/04/erjizhizhen/" class="title">二级指针</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-20 23:40:14 &#43;0800 CST" itemprop="datePublished">2020-04-20</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/03/hdfsmethod/" class="title">API操作HDFS</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-03-11 12:22:24 &#43;0800 CST" itemprop="datePublished">2020-03-11</time>
@@ -219,7 +239,7 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/03/gdb%E5%AE%89%E8%A3%85/" class="title">GDB调试基础命令</a>
+                        <a href="https://brightsails.github.io/2020/03/gdb/" class="title">GDB基础</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-03-08 22:30:01 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
@@ -233,26 +253,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-03-08 21:54:57 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="title">Linux_error</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-03-06 23:39:41 &#43;0800 CST" itemprop="datePublished">2020-03-06</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/02/hdfs%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="title">HDFS基本操作</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-02-21 11:58:01 &#43;0800 CST" itemprop="datePublished">2020-02-21</time>
                     </p>
                 </div>
             </li>
@@ -297,7 +297,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/ssh/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1288字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1300字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
       </div>
     </div>
@@ -352,6 +352,8 @@ sudo /etc/init.d/ssh restart #server重启ssh服务
 ifconfig #查询ip地址，在返回信息中找到自己的ip地址
 sudo vi /etc/network/interfaces修改ip
 sudo /etc/init.d/networking restart 重启网络服务
+5.查看ssh状态
+service ssh status
 </code></pre>
 <pre><code>	如果出现”无法打开锁 “类似的提示可以重启系统，切换到 root 用户再次执行,也可以直接切换到 root 用户尝试。
 	如果还是链接不上请用root权限在终端输入ufw status查询防火墙是否开启，如开启输入：ufw disable 命令关闭防火墙即可链接。
