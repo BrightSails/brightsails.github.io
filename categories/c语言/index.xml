@@ -5,45 +5,135 @@
     <link>https://brightsails.github.io/categories/c%E8%AF%AD%E8%A8%80/</link>
     <description>Recent content in C语言 on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Feb 2020 00:38:30 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 23:40:14 +0800</lastBuildDate>
     
         <atom:link href="https://brightsails.github.io/categories/c%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Bigdata_formal_1</title>
-      <link>https://brightsails.github.io/2020/02/bigdata_formal_1/</link>
-      <pubDate>Sun, 09 Feb 2020 20:50:57 +0800</pubDate>
+      <title>Vscode连接linux</title>
+      <link>https://brightsails.github.io/2020/04/vscode_config/</link>
+      <pubDate>Tue, 21 Apr 2020 18:55:21 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/bigdata_formal_1/</guid>
-      <description>dwdw dwdw scs cs csc     sacas csas csacsa sacs cs   cs cs csc ccs csc   c s scsc cs    scsc sc   scs    eefefef</description>
+      <guid>https://brightsails.github.io/2020/04/vscode_config/</guid>
+      <description>vscode配置： 1.插件安装 remote developmen SFTP 2.文件配置 setting.json中添加： &amp;quot;remote.SSH.showLoginTerminal&amp;quot;: true config中设置： Host brightsails HostName 192.168.1.130 //虚拟机ip User brightsails //要登陆</description>
+    </item>
+    
+    <item>
+      <title>二级指针</title>
+      <link>https://brightsails.github.io/2020/04/secondarypointer/</link>
+      <pubDate>Mon, 20 Apr 2020 23:40:14 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/04/secondarypointer/</guid>
+      <description>在传递一级指针时，只有对指针所指向的内存变量做操作才是有效的； 在传递二级指针时，只有对指针的指向做改变才是有效的； 下面做简单的分析： 在函数传</description>
+    </item>
+    
+    <item>
+      <title>API操作HDFS</title>
+      <link>https://brightsails.github.io/2020/03/hdfsmethod/</link>
+      <pubDate>Wed, 11 Mar 2020 12:22:24 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/03/hdfsmethod/</guid>
+      <description>通过API操作HDFS package HdfsAPI; import org.apache.hadoop.conf.Configuration; import org.apache.hadoop.fs.*; import org.apache.hadoop.io.IOUtils; import org.junit.After; import org.junit.Before; import org.junit.Test; import java.io.*; import java.net.URI; import java.net.URISyntaxException; import static org.apache.hadoop.fs.FileSystem.*; public class HdfsAPI { //实例化hadoop配置文件 //后推前 ctrl+alt+v //去除多余的包 ctrl+calt+o //</description>
+    </item>
+    
+    <item>
+      <title>GDB基础</title>
+      <link>https://brightsails.github.io/2020/03/gdb/</link>
+      <pubDate>Sun, 08 Mar 2020 22:30:01 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/03/gdb/</guid>
+      <description>GDB安装 apt-get install gdb //安装gef 插件 wget -q -O- https://github.com/hugsy/gef/raw/master/gef.sh | sh wget -q -O ~/.gdbinit-gef.py https://github.com/hugsy/gef/raw/master/gef.py echo source ~/.gdbinit-gef.py &amp;gt; ~/.gdbinit 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功</description>
+    </item>
+    
+    <item>
+      <title>Source安装</title>
+      <link>https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sun, 08 Mar 2020 21:54:57 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/</guid>
+      <description>Source insight安装 1.安装并配置 文件准备： mycomment.em 做注释 openfloder.em 快速打开目标目录 quicker.em 快捷键集合 操作： 1.环境准备以及破解 将sourceinsight4以</description>
+    </item>
+    
+    <item>
+      <title>Linux_error</title>
+      <link>https://brightsails.github.io/2020/03/linux_error/</link>
+      <pubDate>Fri, 06 Mar 2020 23:39:41 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/03/linux_error/</guid>
+      <description>1.ubuntu xrandr显示问题 ​ xrandr no protocol specified ​ 用户问题，使用默认登录用户即可解决。 2.ubuntu 分辨率修改 ​ xrandr -s 1920*1200 全屏 3.ubuntu 配置好后无法ssh登录 修改ssh改配置文件，</description>
+    </item>
+    
+    <item>
+      <title>HDFS基本操作</title>
+      <link>https://brightsails.github.io/2020/02/hdfs%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Fri, 21 Feb 2020 11:58:01 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/02/hdfs%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <description>3.2 通过API操作HDFS 3.2.1 HDFS获取文件系统 1）详细代码 /** * 打印本地hadoop地址值 * IO的方式写代码 */ @Test public void intiHDFS() throws IOException { //F2 可以快速的定位错</description>
+    </item>
+    
+    <item>
+      <title>Hadoop配置错误</title>
+      <link>https://brightsails.github.io/2020/02/hadoop_error/</link>
+      <pubDate>Thu, 20 Feb 2020 23:26:22 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/02/hadoop_error/</guid>
+      <description>1.hadoop fs -put 命令出错 2.hadoop配置错误，需要有JAVA_HOME</description>
+    </item>
+    
+    <item>
+      <title>HDFS概念</title>
+      <link>https://brightsails.github.io/2020/02/hdfs%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Thu, 20 Feb 2020 20:36:57 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/02/hdfs%E6%A6%82%E5%BF%B5/</guid>
+      <description>一 HDFS概念 1.1 概念 HDFS，它是一个文件系统，**全称：Hadoop Distributed File System，用于存储文件通过目录树来定位文件；其次，它是分布式的</description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://brightsails.github.io/2020/02/ssh/</link>
+      <pubDate>Thu, 20 Feb 2020 19:40:14 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/02/ssh/</guid>
+      <description>1、ssh SSH 为 Secure Shell 的缩写，SSH 为建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协</description>
+    </item>
+    
+    <item>
+      <title>hadoop配置</title>
+      <link>https://brightsails.github.io/2020/02/hadoop%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 19 Feb 2020 23:12:39 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/02/hadoop%E9%85%8D%E7%BD%AE/</guid>
+      <description>大数据的特征 容量（Volume）：数据的大小决定所考虑的数据的价值和潜在的信息； 种类（Variety）：数据类型的多样性； 速度（Veloci</description>
     </item>
     
     <item>
       <title>Makefile设计</title>
-      <link>https://brightsails.github.io/2020/02/linux_makefile/</link>
+      <link>https://brightsails.github.io/2020/02/makefile/</link>
       <pubDate>Wed, 05 Feb 2020 00:38:30 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/linux_makefile/</guid>
+      <guid>https://brightsails.github.io/2020/02/makefile/</guid>
       <description>Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将</description>
     </item>
     
     <item>
       <title>Linux命令</title>
-      <link>https://brightsails.github.io/2020/02/linuxbasicconfig/</link>
+      <link>https://brightsails.github.io/2020/02/linux%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Tue, 04 Feb 2020 00:07:52 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/02/linuxbasicconfig/</guid>
+      <guid>https://brightsails.github.io/2020/02/linux%E5%91%BD%E4%BB%A4/</guid>
       <description>linux文件权限管理 共10位 r 读 w 写 x 执行 第1位为：d目录 -文件 l软连接代码 第2-5位为：文件所属者权限 第5-8位为：所属组 第8-10位为</description>
     </item>
     
     <item>
-      <title>Bigdata环境搭建</title>
-      <link>https://brightsails.github.io/2020/01/bigdata_1/</link>
+      <title>linux网络配置</title>
+      <link>https://brightsails.github.io/2020/01/linux%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 31 Jan 2020 14:13:45 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/01/bigdata_1/</guid>
-      <description>大数据的特征 容量（Volume）：数据的大小决定所考虑的数据的价值和潜在的信息； 种类（Variety）：数据类型的多样性； 速度（Veloci</description>
+      <guid>https://brightsails.github.io/2020/01/linux%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</guid>
+      <description>配置linux ip linux下查看ip指令： ip addr 配置ip： 1.进入 cd etc/sysconfig/network-scripts 2.打开文件 vi ifcfg-ens33 3.编辑文件 4.重新启动 service network restart vmware及本地配置</description>
     </item>
     
     <item>
@@ -56,6 +146,15 @@
 &lt;h4 id=&#34;1windows下载hugo环境&#34;&gt;1.windows下载hugo环境&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;https://gohugo.io/getting-started/installing/
 &lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>linux共享文件夹设置</title>
+      <link>https://brightsails.github.io/1/01/linux-share-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://brightsails.github.io/1/01/linux-share-files/</guid>
+      <description>vmtool安装流程 1.点击vmware 里面的虚拟机——》安装vmware tool 2.然后（等待一会）弹出一个界面把里面的 VMwareTools-9.6.1-1378637.tar.gz 复制到自己的家目录 3.</description>
     </item>
     
   </channel>

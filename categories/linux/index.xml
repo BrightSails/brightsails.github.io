@@ -5,13 +5,13 @@
     <link>https://brightsails.github.io/categories/linux/</link>
     <description>Recent content in Linux on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 08 Mar 2020 22:30:01 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 18:55:21 +0800</lastBuildDate>
     
         <atom:link href="https://brightsails.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Vscode_config</title>
+      <title>Vscode连接linux</title>
       <link>https://brightsails.github.io/2020/04/vscode_config/</link>
       <pubDate>Tue, 21 Apr 2020 18:55:21 +0800</pubDate>
       
@@ -21,10 +21,10 @@
     
     <item>
       <title>二级指针</title>
-      <link>https://brightsails.github.io/2020/04/erjizhizhen/</link>
+      <link>https://brightsails.github.io/2020/04/secondarypointer/</link>
       <pubDate>Mon, 20 Apr 2020 23:40:14 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/04/erjizhizhen/</guid>
+      <guid>https://brightsails.github.io/2020/04/secondarypointer/</guid>
       <description>在传递一级指针时，只有对指针所指向的内存变量做操作才是有效的； 在传递二级指针时，只有对指针的指向做改变才是有效的； 下面做简单的分析： 在函数传</description>
     </item>
     
@@ -57,10 +57,10 @@
     
     <item>
       <title>Linux_error</title>
-      <link>https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <link>https://brightsails.github.io/2020/03/linux_error/</link>
       <pubDate>Fri, 06 Mar 2020 23:39:41 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/03/linux%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://brightsails.github.io/2020/03/linux_error/</guid>
       <description>1.ubuntu xrandr显示问题 ​ xrandr no protocol specified ​ 用户问题，使用默认登录用户即可解决。 2.ubuntu 分辨率修改 ​ xrandr -s 1920*1200 全屏 3.ubuntu 配置好后无法ssh登录 修改ssh改配置文件，</description>
     </item>
     
