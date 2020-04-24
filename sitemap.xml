@@ -4,48 +4,55 @@
   
   <url>
     <loc>https://brightsails.github.io/</loc>
-    <lastmod>2020-04-21T18:55:21+08:00</lastmod>
+    <lastmod>2020-04-21T19:40:14+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://brightsails.github.io/categories/</loc>
-    <lastmod>2020-04-21T18:55:21+08:00</lastmod>
+    <lastmod>2020-04-21T19:40:14+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://brightsails.github.io/categories/linux/</loc>
-    <lastmod>2020-04-21T18:55:21+08:00</lastmod>
+    <lastmod>2020-04-21T19:40:14+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/2020/04/linux-share-files/</loc>
+    <lastmod>2020-04-21T19:40:14+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://brightsails.github.io/posts/</loc>
-    <lastmod>2020-04-21T18:55:21+08:00</lastmod>
+    <lastmod>2020-04-21T19:40:14+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://brightsails.github.io/tags/</loc>
-    <lastmod>2020-04-21T18:55:21+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://brightsails.github.io/2020/04/vscode_config/</loc>
-    <lastmod>2020-04-21T18:55:21+08:00</lastmod>
+    <lastmod>2020-04-21T19:40:14+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://brightsails.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2020-04-21T19:40:14+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brightsails.github.io/2020/04/vscode_config/</loc>
     <lastmod>2020-04-21T18:55:21+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -59,7 +66,7 @@
   </url>
   
   <url>
-    <loc>https://brightsails.github.io/2020/04/secondarypointer/</loc>
+    <loc>https://brightsails.github.io/2020/04/%E4%BA%8C%E7%BA%A7%E6%8C%87%E9%92%88/</loc>
     <lastmod>2020-04-20T23:40:14+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -201,12 +208,6 @@
   <url>
     <loc>https://brightsails.github.io/2020/01/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-01-19T23:06:02+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://brightsails.github.io/1/01/linux-share-files/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

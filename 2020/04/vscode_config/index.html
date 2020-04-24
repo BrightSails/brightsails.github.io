@@ -42,7 +42,7 @@
 <meta itemprop="description" content="vscode配置： 1.插件安装 remote developmen SFTP 2.文件配置 setting.json中添加： &quot;remote.SSH.showLoginTerminal&quot;: true config中设置： Host brightsails HostName 192.168.1.130 //虚拟机ip User brightsails //要登陆">
 <meta itemprop="datePublished" content="2020-04-21T18:55:21&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-21T18:55:21&#43;08:00" />
-<meta itemprop="wordCount" content="280">
+<meta itemprop="wordCount" content="298">
 
 
 
@@ -210,6 +210,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/04/linux-share-files/" class="title">linux共享文件夹设置</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-21 19:40:14 &#43;0800 CST" itemprop="datePublished">2020-04-21</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://brightsails.github.io/2020/04/vscode_config/" class="title">Vscode连接linux</a>
                     </p>
                     <p class="item-date">
@@ -220,7 +230,7 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/04/secondarypointer/" class="title">二级指针</a>
+                        <a href="https://brightsails.github.io/2020/04/%E4%BA%8C%E7%BA%A7%E6%8C%87%E9%92%88/" class="title">二级指针</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-04-20 23:40:14 &#43;0800 CST" itemprop="datePublished">2020-04-20</time>
@@ -244,16 +254,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-03-08 22:30:01 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/" class="title">Source安装</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-03-08 21:54:57 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
                     </p>
                 </div>
             </li>
@@ -305,7 +305,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/04/vscode_config/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 280字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 298字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
       </div>
     </div>
@@ -331,7 +331,7 @@
 </code></pre>
 <h3 id="ubuntu设置">Ubuntu设置</h3>
 <h4 id="ssh配置">ssh配置</h4>
-<p>将在windows中获得的公匙传入linux的~/.ssh下，~为需要远程登陆的用户，创建文件authorized_keys，然后执行</p>
+<p>将在windows中获得的公匙传入linux的~/.ssh下，~为需要远程登陆的用户(可以直接将公匙文件复制到该目录下)，创建文件authorized_keys，然后执行</p>
 <pre><code>cat id_rsa.pub &gt;&gt; authorized_keys
 </code></pre>
 <p>配置密匙的原因：为了免密登录，如果不需要免密登录，可以不配置。</p>
@@ -352,9 +352,14 @@ PubkeyAuthentication yes
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://brightsails.github.io/2020/04/secondarypointer/" title="二级指针"><i
+                <a href="https://brightsails.github.io/2020/04/%E4%BA%8C%E7%BA%A7%E6%8C%87%E9%92%88/" title="二级指针"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://brightsails.github.io/2020/04/linux-share-files/"
+                    title="linux共享文件夹设置"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

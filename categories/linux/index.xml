@@ -5,10 +5,19 @@
     <link>https://brightsails.github.io/categories/linux/</link>
     <description>Recent content in Linux on BrightSails Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 21 Apr 2020 18:55:21 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 19:40:14 +0800</lastBuildDate>
     
         <atom:link href="https://brightsails.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>linux共享文件夹设置</title>
+      <link>https://brightsails.github.io/2020/04/linux-share-files/</link>
+      <pubDate>Tue, 21 Apr 2020 19:40:14 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/04/linux-share-files/</guid>
+      <description>vmtool安装流程 点击vmware 里面的虚拟机——》安装vmware tool 然后（等待一会）弹出一个界面把里面的 VMwareTools-9.6.1-1378637.tar.gz 复制到自己的家目录 解压VMwa</description>
+    </item>
     
     <item>
       <title>Vscode连接linux</title>
@@ -21,10 +30,10 @@
     
     <item>
       <title>二级指针</title>
-      <link>https://brightsails.github.io/2020/04/secondarypointer/</link>
+      <link>https://brightsails.github.io/2020/04/%E4%BA%8C%E7%BA%A7%E6%8C%87%E9%92%88/</link>
       <pubDate>Mon, 20 Apr 2020 23:40:14 +0800</pubDate>
       
-      <guid>https://brightsails.github.io/2020/04/secondarypointer/</guid>
+      <guid>https://brightsails.github.io/2020/04/%E4%BA%8C%E7%BA%A7%E6%8C%87%E9%92%88/</guid>
       <description>在传递一级指针时，只有对指针所指向的内存变量做操作才是有效的； 在传递二级指针时，只有对指针的指向做改变才是有效的； 下面做简单的分析： 在函数传</description>
     </item>
     
@@ -43,7 +52,7 @@
       <pubDate>Sun, 08 Mar 2020 22:30:01 +0800</pubDate>
       
       <guid>https://brightsails.github.io/2020/03/gdb/</guid>
-      <description>GDB安装 apt-get install gdb //安装gef 插件 wget -q -O- https://github.com/hugsy/gef/raw/master/gef.sh | sh wget -q -O ~/.gdbinit-gef.py https://github.com/hugsy/gef/raw/master/gef.py echo source ~/.gdbinit-gef.py &amp;gt; ~/.gdbinit 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功</description>
+      <description>GDB安装 apt-get install gdb 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功更新ubuntu (更新source.list 使用a</description>
     </item>
     
     <item>
@@ -146,15 +155,6 @@
 &lt;h4 id=&#34;1windows下载hugo环境&#34;&gt;1.windows下载hugo环境&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;https://gohugo.io/getting-started/installing/
 &lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>linux共享文件夹设置</title>
-      <link>https://brightsails.github.io/1/01/linux-share-files/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://brightsails.github.io/1/01/linux-share-files/</guid>
-      <description>vmtool安装流程 1.点击vmware 里面的虚拟机——》安装vmware tool 2.然后（等待一会）弹出一个界面把里面的 VMwareTools-9.6.1-1378637.tar.gz 复制到自己的家目录 3.</description>
     </item>
     
   </channel>

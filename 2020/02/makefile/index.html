@@ -42,7 +42,7 @@
 <meta itemprop="description" content="Linux中Makefile设计 1.编译流程 1.预编译 gcc -E hello.c -o hello.i 目的： 1.展开宏定义 2.引入头文件，将.h引入.c 2.汇编 gcc -S hello.i -o hello.s 目的： 将">
 <meta itemprop="datePublished" content="2020-02-05T00:38:30&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-05T00:38:30&#43;08:00" />
-<meta itemprop="wordCount" content="2874">
+<meta itemprop="wordCount" content="3163">
 
 
 
@@ -210,6 +210,16 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
+                        <a href="https://brightsails.github.io/2020/04/linux-share-files/" class="title">linux共享文件夹设置</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-21 19:40:14 &#43;0800 CST" itemprop="datePublished">2020-04-21</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
                         <a href="https://brightsails.github.io/2020/04/vscode_config/" class="title">Vscode连接linux</a>
                     </p>
                     <p class="item-date">
@@ -220,7 +230,7 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/04/secondarypointer/" class="title">二级指针</a>
+                        <a href="https://brightsails.github.io/2020/04/%E4%BA%8C%E7%BA%A7%E6%8C%87%E9%92%88/" class="title">二级指针</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-04-20 23:40:14 &#43;0800 CST" itemprop="datePublished">2020-04-20</time>
@@ -244,16 +254,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-03-08 22:30:01 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/" class="title">Source安装</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-03-08 21:54:57 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
                     </p>
                 </div>
             </li>
@@ -305,8 +305,8 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/02/makefile/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2874字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 6分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 3163字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 7分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
@@ -428,6 +428,42 @@ $cc -c -I/usr/local/include -I/opt/include hello.c 此时目录搜索会按给�
 	$gcc main.o -L/usr/lib -lqt -lpthread -lrt -o hello
 	
 	上面的命令把目标文件main.o与库qt相连接,连接时会到/usr/lib查找这个库文件.也就是说-L与-l一般要成对出现.
+</code></pre>
+<h4 id="成品">成品</h4>
+<pre><code>TARGET=mult_proxy   //最终目标文件的名字
+SRC = $(wildcard *.c)  //遍历当前目录下的全部.c文件，形成一个列表
+OBJ = $(patsubst %.c,%.o,$(SRC))  //将变量src下面的全部.c结尾的文件，转换为.o存入OBJ
+INCLUDE =
+DEFS = 
+CFLAGS = -g 
+CC =gcc
+LIBS =
+RELEASE=release
+SYMBOL=debug
+
+$(TARGET):$(OBJ)
+	$(CC) $(CFLAGS)  $(DEFS) -o $@ $^ $(LIBS)
+	make看到一个[.o]文件，它就会自动的把[.c]文件加在依赖关系中，如果make找到一个whatever.o，那么whatever.c，就会是whatever.o的依赖文件。
+	1. gcc -g -o mult_proxy $(OBJ)
+	2.obj中是.o文件，则去寻找.c件
+	3.返回至1
+	
+	
+	
+$(RELEASE):$(TARGET)
+	objcopy --strip-debug $(TARGET) $(TARGET).release
+	strip $(TARGET).release 
+	
+$(SYMBOL):$(TARGET)
+	objcopy --only-keep-debug $(TARGET) $(TARGET).symbol
+	
+.PHONY:
+
+	.PHONY意思表示clean是一个“伪目标”，不成文的规矩是——“clean从来都是放在文件的最后”。
+
+
+clean:
+	rm -rf *.o $(TARGET) $(TARGET).release $(TARGET).symbol
 </code></pre>
 <h4 id="程序去符号表步骤">程序去符号表步骤</h4>
 <pre><code>确认程序是否存在符号表
