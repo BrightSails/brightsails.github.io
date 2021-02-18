@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Java 多态</title>
+      <link>https://brightsails.github.io/2020/07/java-%E5%A4%9A%E6%80%81/</link>
+      <pubDate>Thu, 16 Jul 2020 10:04:45 +0800</pubDate>
+      
+      <guid>https://brightsails.github.io/2020/07/java-%E5%A4%9A%E6%80%81/</guid>
+      <description>java 继承类的方法 package day_7_16; class p { public void pa(){ System.out.println(&amp;quot;fu pa&amp;quot;); } public void pb(){ System.out.println(&amp;quot;fu pb&amp;quot;); } public static void main(String[] args) { p p=new p(); s s=new s(); p p2=new s(); p.pa(); p.pb(); s.pa(); s.pb(); s.sa(); s.sb(); p2.pa(); p2.pb(); } } class s extends p { public void sa(){ System.out.println(&amp;quot;zi sa&amp;quot;); } public void sb(){ System.out.println(&amp;quot;zi sb&amp;quot;); } public void pa(){ System.out.println(&amp;quot;zi</description>
+    </item>
+    
+    <item>
       <title>linux共享文件夹设置</title>
       <link>https://brightsails.github.io/2020/04/linux-share-files/</link>
       <pubDate>Tue, 21 Apr 2020 19:40:14 +0800</pubDate>
@@ -154,6 +163,25 @@
 &lt;h4 id=&#34;1windows下载hugo环境&#34;&gt;1.windows下载hugo环境&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;https://gohugo.io/getting-started/installing/
 &lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://brightsails.github.io/1/01/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://brightsails.github.io/1/01/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>正则表达式 [abc]：a、b或c（简单类） [&amp;ldquo;^&amp;quot;abc]：任何字符，除了a、b或c（否定） [a-zA-Z]：a到z或A到Z，两头的字母包括在内（范围） [0-9]：0到9的字符都包括
+[a-d[m-p]]：a到d或m到p：[a-dm-p]（并集）
+[a-z&amp;amp;&amp;amp;[def]]：d、e或f（交集 [a-z&amp;amp;&amp;amp;[”^“bc]]：a到z，除了b和c：[ad-z]（减去） [a-z8&amp;amp;^m-p]]：a到z，而非m到p：[a-1q-z ] 减去
+\d 数字：[0-9], \是转义字符，若表示\d,则需要写为\\d
+\w 单词字符： [a-zA-z_0-9]
+\D非数字
+\W非单词字符
+\s：空白字符：[ \t\n\x0B\f\r]
+.：点代表单个字符
+X？ X，一次或一次也没有 X* X，零次或多次 X+ X，一次或多次 x{n} X，怡好n次 X{n,} X，至少n次 X{n,m} X，至少n次，但是不超过m次
+[abc]{5,15} 5-15位都是abc</description>
     </item>
     
   </channel>

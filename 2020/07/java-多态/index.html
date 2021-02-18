@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        GDB基础 - BrightSails Blog
+        Java 多态 - BrightSails Blog
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,32 +23,32 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="GDB安装 apt-get install gdb 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功更新ubuntu (更新source.list 使用a" />
+  <meta name="description" content="java 继承类的方法 package day_7_16; class p { public void pa(){ System.out.println(&amp;quot;fu pa&amp;quot;); } public void pb(){ System.out.println(&amp;quot;fu pb&amp;quot;); } public static void main(String[] args) { p p=new p(); s s=new s(); p p2=new s(); p.pa(); p.pb(); s.pa(); s.pb(); s.sa(); s.sb(); p2.pa(); p2.pb(); } } class s extends p { public void sa(){ System.out.println(&amp;quot;zi sa&amp;quot;); } public void sb(){ System.out.println(&amp;quot;zi sb&amp;quot;); } public void pa(){ System.out.println(&amp;quot;zi" />
   <meta name="generator" content="Hugo 0.62.2 with theme pure" />
-  <title>GDB基础 - BrightSails Blog</title>
+  <title>Java 多态 - BrightSails Blog</title>
   
   
   <link rel="stylesheet" href="https://brightsails.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="GDB基础" />
-<meta property="og:description" content="GDB安装 apt-get install gdb 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功更新ubuntu (更新source.list 使用a" />
+  <meta property="og:title" content="Java 多态" />
+<meta property="og:description" content="java 继承类的方法 package day_7_16; class p { public void pa(){ System.out.println(&quot;fu pa&quot;); } public void pb(){ System.out.println(&quot;fu pb&quot;); } public static void main(String[] args) { p p=new p(); s s=new s(); p p2=new s(); p.pa(); p.pb(); s.pa(); s.pb(); s.sa(); s.sb(); p2.pa(); p2.pb(); } } class s extends p { public void sa(){ System.out.println(&quot;zi sa&quot;); } public void sb(){ System.out.println(&quot;zi sb&quot;); } public void pa(){ System.out.println(&quot;zi" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://brightsails.github.io/2020/03/gdb/" />
-<meta property="article:published_time" content="2020-03-08T22:30:01+08:00" />
-<meta property="article:modified_time" content="2020-03-08T22:30:01+08:00" />
-<meta itemprop="name" content="GDB基础">
-<meta itemprop="description" content="GDB安装 apt-get install gdb 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功更新ubuntu (更新source.list 使用a">
-<meta itemprop="datePublished" content="2020-03-08T22:30:01&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-08T22:30:01&#43;08:00" />
-<meta itemprop="wordCount" content="779">
+<meta property="og:url" content="https://brightsails.github.io/2020/07/java-%E5%A4%9A%E6%80%81/" />
+<meta property="article:published_time" content="2020-07-16T10:04:45+08:00" />
+<meta property="article:modified_time" content="2020-07-16T10:04:45+08:00" />
+<meta itemprop="name" content="Java 多态">
+<meta itemprop="description" content="java 继承类的方法 package day_7_16; class p { public void pa(){ System.out.println(&quot;fu pa&quot;); } public void pb(){ System.out.println(&quot;fu pb&quot;); } public static void main(String[] args) { p p=new p(); s s=new s(); p p2=new s(); p.pa(); p.pb(); s.pa(); s.pb(); s.sa(); s.sb(); p2.pa(); p2.pb(); } } class s extends p { public void sa(){ System.out.println(&quot;zi sa&quot;); } public void sb(){ System.out.println(&quot;zi sb&quot;); } public void pa(){ System.out.println(&quot;zi">
+<meta itemprop="datePublished" content="2020-07-16T10:04:45&#43;08:00" />
+<meta itemprop="dateModified" content="2020-07-16T10:04:45&#43;08:00" />
+<meta itemprop="wordCount" content="185">
 
 
 
-<meta itemprop="keywords" content="GDB," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GDB基础"/>
-<meta name="twitter:description" content="GDB安装 apt-get install gdb 安装GDB增强工具 (gef) GDB的版本大于7.7 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh 确保网络连通 并且成功更新ubuntu (更新source.list 使用a"/>
+<meta itemprop="keywords" content="Java基础," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java 多态"/>
+<meta name="twitter:description" content="java 继承类的方法 package day_7_16; class p { public void pa(){ System.out.println(&quot;fu pa&quot;); } public void pb(){ System.out.println(&quot;fu pb&quot;); } public static void main(String[] args) { p p=new p(); s s=new s(); p p2=new s(); p.pa(); p.pb(); s.pa(); s.pb(); s.sa(); s.sb(); p2.pa(); p2.pb(); } } class s extends p { public void sa(){ System.out.println(&quot;zi sa&quot;); } public void sb(){ System.out.println(&quot;zi sb&quot;); } public void pa(){ System.out.println(&quot;zi"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -285,8 +285,8 @@
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2020/03/gdb/"
-    >GDB基础</a
+    href="/2020/07/java-%E5%A4%9A%E6%80%81/"
+    >Java 多态</a
   >
 </h1>
 
@@ -294,170 +294,85 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://brightsails.github.io/2020/03/gdb/" class="article-date">
-  <time datetime="2020-03-08 22:30:01 &#43;0800 CST" itemprop="datePublished">2020-03-08</time>
+<a href="https://brightsails.github.io/2020/07/java-%E5%A4%9A%E6%80%81/" class="">
+  <time datetime="2020-07-16 10:04:45 &#43;0800 CST" itemprop="datePublished">2020-07-16</time>
 </a>
 </span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/linux/"> Linux </a>
-</span>  
+  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/gdb/"> GDB </a>
+    <a class="article-tag-link" href="/tags/java%E5%9F%BA%E7%A1%80/"> Java基础 </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/03/gdb/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/07/java-%E5%A4%9A%E6%80%81/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 779字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 185字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h3 id="gdb安装">GDB安装</h3>
-<pre><code>apt-get install gdb 
+      <h3 id="java-继承类的方法"><em>java</em> 继承类的方法</h3>
+<pre><code>package day_7_16;
+
+class p
+{
+public void pa(){
+	System.out.println(&quot;fu pa&quot;);
+}
+public void pb(){
+	System.out.println(&quot;fu pb&quot;);
+}
+
+public static void main(String[] args) {
+	p p=new p();
+	s s=new s();
+	p p2=new s();
+
+	p.pa();
+	p.pb();
+	
+	s.pa();
+	s.pb();
+	s.sa();
+	s.sb();
+	
+	p2.pa();
+	p2.pb();
+}
+
+}
+class s extends p
+{
+public void sa(){
+	System.out.println(&quot;zi sa&quot;);
+}
+public void sb(){
+	System.out.println(&quot;zi sb&quot;);
+}
+public void pa(){
+	System.out.println(&quot;zi pa&quot;);
+}
+}
+
+
+
+
+result:
+fu pa
+fu pb
+zi pa
+fu pb
+zi sa
+zi sb
+zi pa
+fu pb
+
+sumraise:
+	当父类new的值为子类时，在内存中只会装载子类中与父类共有的方法，与父类中不与子类共有的方法。
 </code></pre>
-<h3 id="安装gdb增强工具-gef">安装GDB增强工具 (gef)</h3>
-<ul>
-<li>GDB的版本大于7.7</li>
-<li>wget -q -O- <a href="https://github.com/hugsy/gef/raw/master/scripts/gef.sh">https://github.com/hugsy/gef/raw/master/scripts/gef.sh</a> | sh</li>
-<li>确保网络连通 并且成功更新ubuntu (更新source.list 使用apt-get update)</li>
-</ul>
-<h3 id="安装gdb增强工具-pwndbg">安装GDB增强工具 (pwndbg)</h3>
-<ul>
-<li>
-<p>git clone <a href="https://github.com/pwndbg/pwndbg">https://github.com/pwndbg/pwndbg</a></p>
-</li>
-<li>
-<p>cd pwndbg</p>
-</li>
-<li>
-<p>sudo #./setup.sh</p>
-</li>
-</ul>
-<h4 id="gdb启动方式">GDB启动方式</h4>
-<ul>
-<li>gdb 文件名</li>
-<li>gdb 文件名 core（错误文件日志）</li>
-<li>set args -c 0 -i 123456</li>
-</ul>
-<pre><code>readelf -h查看文件头 其中的entry point address为程序起始地址
-</code></pre>
-<h3 id="gdb调试">GDB调试</h3>
-<h4 id="1基于源码的调试">1.基于源码的调试</h4>
-<h5 id="基础知识">基础知识</h5>
-<ul>
-<li>RIP 执行指针</li>
-<li>ESP 栈顶指针</li>
-<li>EAX当前栈指针位置</li>
-<li>EBP基址指针</li>
-</ul>
-<h5 id="基础指令">基础指令：</h5>
-<ul>
-<li>
-<p>vmmap 程序中关键地址段</p>
-</li>
-<li>
-<p>nexti 汇编下一行</p>
-</li>
-<li>
-<p>n 下一行</p>
-</li>
-<li>
-<p>u 跳出循环</p>
-<pre><code>p/x变量名 查看地址
-p/d 以十进制打印值
-p *变量 查看结构体，地址
-p *(db_list_t * )变量名 
-p &amp;变量名 查看该变量地址
-p 变量名=x 直接复制
-</code></pre>
-</li>
-<li>
-<p>s 进入函数内</p>
-</li>
-<li>
-<p>b 行数 跳转</p>
-</li>
-<li>
-<p>b 函数名 跳转</p>
-</li>
-<li>
-<p>set args 参数&hellip; 设置参数</p>
-</li>
-<li>
-<p>l main 查看main函数</p>
-</li>
-<li>
-<p>break （b） 函数名，行号     打断点</p>
-</li>
-<li>
-<p>shell 跳转至shell</p>
-</li>
-<li>
-<p>exit 退出shell</p>
-</li>
-<li>
-<p>r 运行</p>
-</li>
-<li>
-<p>x/20wx（32位，gz为64位）查看20个16 进制的字节</p>
-<pre><code>x/s 以字符串方式查看
-x/sa 变量名 查看字符串 
-s为字长 b 比特  w 4字节 g 8字节  
-a为进制  d是十进制  f,z十六进制  x八进制
-</code></pre>
-</li>
-<li>
-<p>i r查看所有的寄存器的值</p>
-</li>
-<li>
-<p>bt 查看进入的函数的调用关系</p>
-</li>
-<li>
-<p>info frame 0 查看当前函数调用栈</p>
-</li>
-<li>
-<p>x/i 查看二进制代码</p>
-</li>
-<li>
-<p>l 名字 查看具体代码</p>
-</li>
-<li>
-<p>c 跳至下一断点</p>
-</li>
-<li>
-<p>b 变量 if 条件   条件断点</p>
-</li>
-</ul>
-<h4 id="条件断点">条件断点</h4>
-<p>若在for中循环100次，需要在第50次循环停下来</p>
-<p>b 行号 if （i==50）</p>
-<h4 id="多进程">多进程</h4>
-<p>follow-fork-mode 设置进程模式</p>
-<p>detach-on-fork 是否只调试子进程</p>
-<h4 id="防破解的保护机制">防破解的保护机制</h4>
-<ul>
-<li>
-<p>ASLR与PIE ASLP为系统层面，ASPR为指令地址随机化（不开启偏移地址是固定的），PIE是在GCC编译时自行决定是否开启</p>
-</li>
-<li>
-<p>Canary 栈保护机制，在函数返回时校验cookie，从而判断是否栈溢出</p>
-</li>
-<li>
-<p>NX 栈不可执行</p>
-</li>
-<li>
-<p>RELRO</p>
-</li>
-<li>
-<p>加壳</p>
-</li>
-</ul>
-<h4 id="段错误核心已转储">段错误（核心已转储）</h4>
-<p>查看core文件，设置方法：切换至root下，输入**”ulimit  -c unlimited “**命令。</p>
-<p>在gdb中添加core文件去调试程序：gdb mult_proxy core</p>
-<p>nc-lvp 端口号 监听端口</p>
+<h4 id="interface-方法默认权限">interface 方法默认权限</h4>
+<p>public static final为接口的默认访问权限</p>
+<p>public abstract为默认的接口的方法的访问权限</p>
 
     </div>
   </article>
@@ -468,14 +383,9 @@ a为进制  d是十进制  f,z十六进制  x八进制
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://brightsails.github.io/2020/03/source%E5%AE%89%E8%A3%85/" title="Source安装"><i
+                <a href="https://brightsails.github.io/2020/04/linux-share-files/" title="linux共享文件夹设置"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="https://brightsails.github.io/2020/03/hdfsmethod/"
-                    title="API操作HDFS"><span>上一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
